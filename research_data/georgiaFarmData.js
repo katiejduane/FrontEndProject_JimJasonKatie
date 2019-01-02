@@ -19,17 +19,6 @@ let cropInfo = [
         crop: "Blueberries"
     },
 
-    {
-        crop: "Cotton"
-    },
-
-    { 
-        crop: "Sweet Potatoes"
-    },
-
-    {
-        crop: "Watermelon"
-    }
 ]
 
 
@@ -56,12 +45,7 @@ let treeInfo = [
     {
         tree: "Peach Tree"
     },
-    {
-        tree: "Pecan Tree"
-    },
-    {
-        tree: "Southern Live Oak"
-    }
+    
 ]
 
 
