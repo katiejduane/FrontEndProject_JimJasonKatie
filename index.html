@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="images/photos/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    
 </head>
 <body>
     <div class="background-wrapper">
@@ -27,9 +26,18 @@
                 <button class="button">PLANTS</button>
             </div>
         </div>
-        <div class="compass">COMPASS</div>
+        <div class="compass">COMPASS
+            <form class="google-query-form">
+                <div class="input-group">
+                    <!-- <input type="text" class="input-control" id="symbol" placeholder="In What City Would You Like to Find Local Farms?" /> -->
+                    <button type="submit" class="submit-button">Click to see a local map</button>
+                </div>
+            </form>
+            <div class="google-body"></div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="config.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
