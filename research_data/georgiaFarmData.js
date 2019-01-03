@@ -45,7 +45,7 @@ let cropInfo = [
         historicalFact: "Humans have been cultivating honey since ancient times. A cave painting of a honey-seeker in Valencia Spain dates back 8,000 years.",
         medicinal: "Honey can be used to treat mild burns, chronic and acute coughs, and can also be useful for controlling the side effects of radiation and chemotherapy. Its antibiotic porperites are currently being researched.",
         myth: "In ancient Greece, the food of Zeus and the Twelve Gods of Olympus was honey in the form of nectar and ambrosia--conferring immortality and longevity.",
-        symbolism: "Sweetness,",
+        symbolism: "Sweetness, Prosperity",
         georgia: "Decatur is Georgia's first officially 'Bee-Friendly city. Georgia also has a State Prison Beekeeping Program. Tpes of honey commonly sold in Georgia are Orange Blossom, Sourwood, Tupelo, Tulip Poplar, Clover, Gallberry, and Wildflower Honey"
     },
 
