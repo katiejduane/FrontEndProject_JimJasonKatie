@@ -18,7 +18,7 @@ $(document).ready(()=>{
             console.log(JSData)
             $('.google-body').append(`
                 <tr>--</tr>
-            `)
+            ` )
         }) //end getJSON for geocode
             $('.submit-button').html(`
            <img src='https://maps.googleapis.com/maps/api/staticmap?center=atlanta,%20ga&zoom=8&size=600x600&maptype=roadmap&key=AIzaSyBWqoJ35EyWPOEPTryUly1ktzdkY8T8UXU'/>
