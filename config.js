@@ -1,1 +1,1 @@
-// google maps API key
+const apiKey = 'AIzaSyBWqoJ35EyWPOEPTryUly1ktzdkY8T8UXU' // google maps API key
