@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FARM!!</title>
+    <title>Local Georgia Farm Tour</title>
     <link rel="shortcut icon" href="images/photos/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
@@ -13,35 +13,44 @@
     <div class="modal">
         <h1 class="modal-title">We're not in Kansas anymore!</h1>
         <div class="modal-actions">
-    
         </div>
     </div>
     <div class="background-wrapper">
         <div class="sun">SUN</div>
         <div class="circle">
-            <div class="card-wrapper">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-                <div class="card">Card 4</div>
-            </div> 
-        </div>
-        <div class="nav">
-            <div class="button-wrapper"></div>
-                <button class="button">ABOUT</button>
-                <button class="button">ANIMALS</button>
-                <button class="button">PLANTS</button>
+    <div class="container">
+        <section class="header">
+            <div class="sun">
+                <div class="placeholder"></div>
             </div>
-        </div>
-        <div class="compass">COMPASS
-            <form class="google-query-form">
-                <div class="input-group">
-                    <!-- <input type="text" class="input-control" id="symbol" placeholder="In What City Would You Like to Find Local Farms?" /> -->
-                    <button type="submit" class="submit-button">Click to see a local map</button>
-                </div>
-            </form>
-            <div class="google-body"></div>
-        </div>
+            <div class="compass">
+                <form class="google-query-form">
+                    <div class="input-group">
+                        <!-- <input type="text" class="input-control" id="symbol" placeholder="In What City Would You Like to Find Local Farms?" /> -->
+                        <button type="submit" class="submit-button"></button>
+                    </div>
+                </form>
+                <div class="google-body"></div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="circle">
+                <div class="card-wrapper">
+                    <div class="card" id="card1">Card 1</div>
+                    <div class="card" id="card1">Card 2</div>
+                    <div class="card" id="card1">Card 3</div>
+                    <div class="card" id="card1">Card 4</div>
+                </div> 
+            </div>
+        </section>
+        <section class="footer">  
+            <div class="button-wrapper">
+                <button class="button" id="about">ABOUT</button>
+                <button class="button" id="animals">ANIMALS</button>
+                <button class="button" id="plants">PLANTS</button>
+            </div>  
+        </section> 
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="config.js"></script>
