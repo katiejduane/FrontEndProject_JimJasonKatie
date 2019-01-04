@@ -1,5 +1,6 @@
 $(document).ready(()=>{
-    console.log ("sanity check")
+    // console.log ("sanity check")
+
     // const queryForm = document.querySelector('.google-query-form')
     // let mapPic = ``
     // console.log(queryForm)

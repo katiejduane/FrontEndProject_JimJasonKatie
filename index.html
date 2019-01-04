@@ -9,31 +9,39 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 </head>
 <body>
-    <div class="background-wrapper">
-        <div class="sun">SUN</div>
-        <div class="circle">
-            <div class="card-wrapper">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-                <div class="card">Card 4</div>
-            </div> 
-        </div>
-        <div class="nav">
-            <div class="button-wrapper"></div>
-                <button class="button">ABOUT</button>
-                <button class="button">ANIMALS</button>
-                <button class="button">PLANTS</button>
+    <div class="container">
+        <section class="header">
+            <div class="sun">
+                <div></div>
             </div>
-        </div>
-        <div class="compass">COMPASS
-            <form class="google-query-form">
-                <div class="input-group">
-                    <!-- <input type="text" class="input-control" id="symbol" placeholder="In What City Would You Like to Find Local Farms?" /> -->
-                    <button type="submit" class="submit-button">Click to view all farms within 15 miles of your location</button>
-                </div>
-            </form>
-        </div>
+            <div class="compass">
+                <form class="google-query-form">
+                    <div class="input-group">
+                        <!-- <input type="text" class="input-control" id="symbol" placeholder="In What City Would You Like to Find Local Farms?" /> -->
+                        <button type="submit" class="submit-button"></button>
+                    </div>
+                </form>
+                <div class="google-body"></div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="circle">
+                <div class="card-wrapper">
+                    <div class="card" id="card1">Card 1</div>
+                    <div class="card" id="card1">Card 2</div>
+                    <div class="card" id="card1">Card 3</div>
+                    <div class="card" id="card1">Card 4</div>
+                </div> 
+            </div>
+        </section>
+        <section class="footer">  
+            <div class="button-wrapper">
+                <button class="button" id="about">ABOUT</button>
+                <button class="button" id="animals">ANIMALS</button>
+                <button class="button" id="plants">PLANTS</button>
+            </div>  
+        </section> 
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="config.js"></script>
