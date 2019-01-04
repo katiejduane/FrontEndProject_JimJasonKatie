@@ -1,5 +1,6 @@
 body{
-    background: lightblue;
+  margin:0;
+  background: lightblue;
 }
 
 .header{
@@ -133,5 +134,55 @@ body{
     border-radius: 50%;
     top: 85%;
     left: 85%;
-
 }
+
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 124, 223);
+    filter: opacity(0.5);
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal_title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal_actions {
+  text-align: center;
+}
+
+.modal_action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal_action:hover,
+.modal_action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
