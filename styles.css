@@ -74,10 +74,16 @@ body{
 
 }
 
-.card img {
+#card1 {
+    background: url(images/bull-sm.png);
+    background-size: 50%;
+    background-position: center;
+}
+
+/* .card-wrapper img {
     width: 150px;
     vertical-align: middle;
-}
+} */
 
 .nav{
     display: flex;
