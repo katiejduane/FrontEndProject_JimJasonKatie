@@ -5,37 +5,112 @@ body{
 
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
     /* background-color: lightcyan; */
-    margin: 8px;
+}
+
+
+.sun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    margin: 20px auto;
+    box-shadow: 3px 3px 30px 20px rgba(241, 69, 69, 0.863);
+}
+
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    /* background: lightgreen; */
+}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    max-width: 100vw;
+    max-height: 100vw;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* z-index: 1; */
+    /* box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .50); */
+}
+
+.card-wrapper {
+    width: 100vw;
+    /* height: 500px; */
+    /* position: absolute; */
+    /* vertical-align: middle; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 5%;
 
 }
 
-/* #glow {
-    height: 200px;
-    width: 200px;
-    background-image: radial-gradient(circle, red, blue at 20% 20%)
-} */
+.card img {
+    width: 150px;
+    vertical-align: middle;
+}
 
-.sun {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rebeccapurple;
-    margin: 20px;
-    box-shadow: 3px 3px 20px 10px rgba(241, 69, 69, 0.863);
+.nav{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+
+.button-wrapper {
+    display: flex;
+    width: 90%;
+    /* padding: 10px; */
+    align-content: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 5px;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    border: none;
 }
 
 .compass {
     display: flex;
     background: lightgoldenrodyellow;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    align-self: flex-end;
-    margin: 50px;
     justify-content: center;
     align-items: center;
+    margin: 20px auto;
 }
 
 .input-group{
@@ -46,71 +121,12 @@ body{
 .submit-button{
     border: none;
     background: lightgreen;
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px 5px rgba(27, 235, 190, 0.863);
+    box-shadow: 0px 0px 20px 10px rgba(27, 235, 190, 0.863);
 }
 
-.main{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    /* background: lightgreen; */
-    margin: 8px;
-}
-
-.circle {
-    margin:auto;
-    height: 400px;
-    width: 400px;
-    margin: 20px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .50);
-}
-
-.card-wrapper {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.card {
-    margin: 2px;
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    border-radius: 5px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    /* background: lightsalmon; */
-    margin: 21px;
-}
-
-.button-wrapper {
-    display: flex;
-    max-width: 200px;
-    padding: 10px;
-    align-content: center;
-    justify-content: center;
-}
-
-.button {
-    padding: 5px;
-    width: 80px;
-    text-align: center;
-    border: none;
-}
 
 #about{
     background: mediumseagreen;
@@ -174,4 +190,3 @@ body{
   background: #2ddf5c;
   border-color: #2ddf5c;
 }
-
