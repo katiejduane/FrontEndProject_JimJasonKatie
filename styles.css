@@ -1,95 +1,117 @@
 body{
-    background: #b4ddb4; /* Old browsers */
-background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+    background: lightblue;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: lightcyan; */
+    margin: 8px;
 }
 
 .sun {
-    background: #ffd651; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffd651 0%, #fc914e 50%, #fbdf93 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffd651 0%,#fc914e 50%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffd651 0%,#fc914e 50%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd651', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: white;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    background-color: rebeccapurple;
+    margin: 20px;
+    box-shadow: 3px 3px 20px 10px rgba(241, 69, 69, 0.863);
 }
 
-.circle {
-    margin:auto;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-}
-
-.card-wrapper {
-    margin: auto; 
+.compass {
     display: flex;
-    width: 300px;
-    height: 300px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    background: lightgoldenrodyellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin: 50px;
     justify-content: center;
     align-items: center;
 }
 
+.input-group{
+    display: flex;
+    justify-items: center;
+}
+
+.submit-button{
+    border: none;
+    background: lightgreen;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(27, 235, 190, 0.863);
+}
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* background: lightgreen; */
+    margin: 8px;
+}
+
+.circle {
+    margin:auto;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .50);
+}
+
+.card-wrapper {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 .card {
-    /* margin:auto;
-    margin-top:100px;
-    display:flex; */
-    height: 125px;
-    width: 125px;
+    margin: 2px;
+    height: 100px;
+    width: 100px;
     background-color: red;
     border-radius: 5px;
 }
 
-.nav {
-    position: relative;
-    margin: 20px auto;
-    width: 300px;
-    height: 30px;
-    bottom: 5%;
-    background-color: white;
-    border-radius: 3px;
+.footer {
+    display: flex;
+    justify-content: center;
+    /* background: lightsalmon; */
+    margin: 20px;
 }
 
 .button-wrapper {
-    margin: auto;
     display: flex;
-    align-items: center;
+    max-width: 200px;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
 }
 
 .button {
     padding: 5px;
+    width: 80px;
     text-align: center;
-    align-items:center;
+    border: none;
 }
 
-.input-control{
-    width: 400 px;;
+#about{
+    background: mediumseagreen;
 }
 
-.submit-button {
-    padding: 5px;
-    /* width: 200px; */
-    text-align: center;
-    align-items:center;
+#animals{
+    background: mediumslateblue;
 }
 
-.compass {
-    position: relative;
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    top: 85%;
-    left: 85%;
+#plants{
+    background: mediumturquoise;
 }
