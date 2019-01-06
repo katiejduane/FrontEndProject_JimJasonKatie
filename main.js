@@ -217,7 +217,7 @@ $(animalButton).on('click', function () {
     $(card2).css('background-size', '90%');
     $(card3).css('background', 'rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat');
     $(card3).css('background-size', '90%');
-    $(card4).css('background', 'rgb(241, 221, 152) url(images/goat.png) center center no-repeat');
+    $(card4).css('background', 'rgb(241, 221, 152) url(images/goat-sm.png) center center no-repeat');
     $(card4).css('background-size', '90%');
 });
 
@@ -262,4 +262,5 @@ $(aboutButton).on('click', function () {
 //         })
 
 //     })
+// })
 // })
