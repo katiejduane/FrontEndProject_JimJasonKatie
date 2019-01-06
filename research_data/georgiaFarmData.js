@@ -83,28 +83,28 @@ let critterInfo = [
 
     {
         critter: "Cows",
-        latinName: ``,
+        latinName: "",
         produce: "Beef and Milk",
         historicalFact: "",
         medicinal: "",
         myth: "",
         symbolism: "",
         georgia: "",
-        weirdFact: ``,
-        funFact: ``,
+        weirdFact: "",
+        funFact: "",
         trivia: "",
     },
 
     {
         critter: "Goat",
-        latinName: ``,
+        latinName: "",
         historicalFact: "",
         medicinal: "",
         myth: "",
         symbolism: "",
         georgia: "",
-        weirdFact: ``,
-        funFact: ``,
+        weirdFact: "",
+        funFact: "",
         trivia: "",
 
     }
