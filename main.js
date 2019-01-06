@@ -123,6 +123,7 @@ let card4 = document.querySelector('#card4');
 let animalButton = document.querySelector('#animals');
 let plantButton = document.querySelector('#plants');
 let aboutButton = document.querySelector('#about');
+let main = document.querySelector('.main')
 
 //booleans for page START (they change when clicking the nav buttons!)
 let animals = true;
@@ -149,9 +150,9 @@ function animalData() {
             <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
-                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-2"></div>`
+                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
-                    $('.orb-2').on('click', function () {
+                    $('.orb-1').on('click', function () {
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
@@ -178,9 +179,9 @@ function plantData() {
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
                     modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-2"></div>`
+                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
-                    $('.orb-2').on('click', function () {
+                    $('.orb-1').on('click', function () {
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
@@ -197,13 +198,23 @@ $(plantButton).on('click', function () {
     plants = true;
     animals = false;
     plantData();
-    $(card1).css('background', 'rgb(241, 221, 152) url(images/blueberry-sm.png) center center no-repeat');
+    let mainHTML = "";
+    mainHTML = `<div class="circle">
+                <div class="card-wrapper">
+                    <div class="card" id="card1"></div>
+                    <div class="card" id="card2"></div>
+                    <div class="card" id="card3"></div>
+                    <div class="card" id="card4"></div>
+                </div> 
+            </div>`
+    $(main).html(mainHTML)
+    $(card1).css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
     $(card1).css('background-size', '90%');
-    $(card2).css('background', 'rgb(241, 221, 152) url(images/peach-sm.png) center center no-repeat');
+    $(card2).css('background', 'lightgoldenrodyellow url(images/peach-sm.png) center center no-repeat');
     $(card2).css('background-size', '90%');
-    $(card3).css('background', 'rgb(241, 221, 152) url(images/honeybee-sm.png) center center no-repeat');
+    $(card3).css('background', 'lightgoldenrodyellow url(images/honeybee-sm.png) center center no-repeat');
     $(card3).css('background-size', '90%');
-    $(card4).css('background', 'rgb(241, 221, 152) url(images/collard-sm.png) center center no-repeat');
+    $(card4).css('background', 'lightgoldenrodyellow url(images/collard-sm.png) center center no-repeat');
     $(card4).css('background-size', '90%');
 });
 
@@ -211,17 +222,28 @@ $(animalButton).on('click', function () {
     animals = true;
     plants = false;
     animalData();
-    $(card1).css('background', 'rgb(241, 221, 152) url(images/pig-sm.png) center center no-repeat');
+    let mainHTML = "";
+    mainHTML = `<div class="circle">
+                <div class="card-wrapper">
+                    <div class="card" id="card1"></div>
+                    <div class="card" id="card2"></div>
+                    <div class="card" id="card3"></div>
+                    <div class="card" id="card4"></div>
+                </div> 
+            </div>`
+    $(main).html(mainHTML)
+    $(card1).css('background', 'lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat');
     $(card1).css('background-size', '90%');
-    $(card2).css('background', 'rgb(241, 221, 152) url(images/bull-sm.png) center center no-repeat');
+    $(card2).css('background', 'lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat');
     $(card2).css('background-size', '90%');
-    $(card3).css('background', 'rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat');
+    $(card3).css('background', 'lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat');
     $(card3).css('background-size', '90%');
-    $(card4).css('background', 'rgb(241, 221, 152) url(images/goat-sm.png) center center no-repeat');
+    $(card4).css('background', 'lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat');
     $(card4).css('background-size', '90%');
 });
 
 $(aboutButton).on('click', function () {
+
     animals = false;
     plants = false;
 })

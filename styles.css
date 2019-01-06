@@ -6,8 +6,8 @@ body{
 .backdrop {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(250, 124, 223);
-    filter: opacity(0.5);
+    background-color: #2d8acd;
+    filter: opacity(0.6);
     display: none;
     position: fixed;
     z-index: 100;
@@ -19,10 +19,14 @@ body{
   position: fixed;
   display: none;
   z-index: 200;
-  top: 10%;
-  left: 15%;
-  width: 60vw;
-  background: rgb(177, 218, 199);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  min-width: 300px;
+  height: 400px;
+  min-height: 300px;
+  background: lightgoldenrodyellow;
   border-radius: 5px;
   padding: 15px;
   
@@ -34,43 +38,18 @@ body{
   margin: 0 0 1rem 0;
 }
 
-.modal-2 {
-  position: fixed;
-  display: none;
-  z-index: 200;
-  top: 10%;
-  left: 15%;
-  width: 60vw;
-  background: rgb(155, 138, 231);
-  border-radius: 5px;
-  padding: 15px;
-  
-}
-
 .orb-1 {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: rgb(253, 93, 245);
-    box-shadow: 0px 0px 20px 10px rgba(235, 180, 27, 0.863);
+    background-color: #2d8acd;
+    box-shadow: 0px 0px 20px 10px rgba(252, 3, 169, 0.85);
     margin: 5px auto;
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
 }
-
-.orb-2 {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: rgb(253, 93, 245);
-    box-shadow: 0px 0px 20px 10px rgba(235, 180, 27, 0.863);
-    margin: 5px auto;
-    text-align: center;
-}
-
-orb-1 {
-    box-shadow: 0px 0px 20px 10px rgba(27, 235, 155, 0.863);
-}
-
 
 .header{
     display: flex;
@@ -89,7 +68,7 @@ orb-1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #d9ff00;
+    background-color: rgb(240, 240, 158);
     margin: 30px auto;
     box-shadow: 0px 0px 60px 25px rgba(252, 3, 169, 0.85);
 }
@@ -125,22 +104,22 @@ orb-1 {
 }
 
 #card1 {
-    background: rgb(241, 221, 152) url(images/pig-sm.png) center center no-repeat;
+    background: lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat;
     background-size: 90%;
 }
 
 #card2 {
-    background: rgb(241, 221, 152) url(images/bull-sm.png) center center no-repeat;
+    background: lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat;
     background-size: 90%;
 }
 
 #card3 {
-    background: rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat;
+    background: lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat;
     background-size: 90%;
 }
 
 #card4 {
-    background:  rgb(241, 221, 152) url(images/goat-sm.png) center center no-repeat;
+    background:  lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat;
     background-size: 90%;
 }
 
@@ -167,22 +146,23 @@ orb-1 {
 }
 
 #about{
-    background: mediumseagreen;
+    background: #61b864;
     border-radius: 5px 0 0 5px;
 }
 
 #animals{
-    background: mediumslateblue;
+    background: #61b864;
 }
 
 #plants{
-    background: mediumturquoise;
+    background: #61b864;
     border-radius: 0 5px 5px 0;
 }
 
 .compass {
     display: flex;
-    background: lightgoldenrodyellow;
+    background-color: rgba(250, 250, 210, 0.863);
+    box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -198,11 +178,11 @@ orb-1 {
 
 .submit-button{
     border: none;
-    background: lightgreen;
+    background: #2d8acd;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px 10px rgba(27, 235, 190, 0.863);
+    box-shadow: 0px 0px 20px 10px rgba(252, 3, 169, 0.85);
 }
 
 /* ================================================================================================= */
@@ -264,7 +244,7 @@ orb-1 {
     }
 
     .card {
-        margin: 0px;
+        margin: 2px;
         width: 145px;
         height: 145px;
         background-color: red;
@@ -272,32 +252,33 @@ orb-1 {
     }
 
     #card1 {
-        background: rgb(241, 221, 152) url(images/pig-sm.png) center center no-repeat;
+        background:lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat;
         background-size: 90%;
+        border-radius: 5% 0 0 0;
     }
 
     #card2 {
-        background: rgb(241, 221, 152) url(images/bull-sm.png) center center no-repeat;
+        background: lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat;
         background-size: 90%;
+        border-radius: 0 5% 0 0;
     }
 
     #card3 {
-        background: rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat;
+        background: lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat;
         background-size: 90%;
+        border-radius: 0 0 0 5%;
     }
 
     #card4 {
-        background:  rgb(241, 221, 152) url(images/goat-sm.png) center center no-repeat;
+        background:  lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat;
         background-size: 90%;
-    }
-
-    #card1{
-        border-radius: 50% 0 0 0;
-        background-size: 90%;
+        border-radius: 0 0 5% 0;
     }
 
     #card1:hover{
-        transform: scale(2) translate(-35px, -35px);
+        transform: scale(1.8);
+        transform-origin: bottom right;
+       
         /* background-image: linear-gradient(to bottom right, lightgoldenrodyellow, red); */
     }
 
@@ -309,12 +290,9 @@ orb-1 {
         transition: all 2s ease-out;
     }
 
-    #card2{
-        border-radius: 0 50% 0 0;
-    }
-
     #card2:hover{
-        transform: scale(2) translate(35px, -35px);
+        transform: scale(1.8);
+        transform-origin: bottom left;
         /* border-radius: 10% 50% 10% 0; */
     }
 
@@ -326,12 +304,9 @@ orb-1 {
         transition: all 2s ease-out;
     }
 
-    #card3{
-        border-radius: 0 0 0 50%;
-    }
-
     #card3:hover{
-        transform: scale(2) translate(-35px, 35px);
+        transform: scale(1.8);
+        transform-origin: top right;
     }
 
     #card3.ease{
@@ -342,12 +317,9 @@ orb-1 {
         transition: all 2s ease-out;
     }
 
-    #card4{
-        border-radius: 0 0 50% 0;
-    }
-
     #card4:hover{
-        transform: scale(2) translate(35px, 35px);
+        transform: scale(1.8);
+        transform-origin: top left;
     }
 
     #card4.ease{
@@ -377,18 +349,18 @@ orb-1 {
     }
 
     #about:hover{
-        background: yellowgreen;
+        background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
     }
 
     #animals:hover{
-        background: yellowgreen;
+        background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
         transition: all 2s;
     }
 
     #plants:hover{
-        background: yellowgreen;
+        background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
         transition: all 2s;
     }
@@ -409,7 +381,6 @@ orb-1 {
         min-height: 52px;
         padding: 1rem;
         margin: 2rem;
-        box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
     }
 
     .submit-button{

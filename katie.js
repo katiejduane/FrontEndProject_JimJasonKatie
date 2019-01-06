@@ -149,9 +149,9 @@ function animalData() {
             <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
-                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-2"></div>`
+                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
-                    $('.orb-2').on('click', function () {
+                    $('.orb-1').on('click', function () {
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
@@ -178,9 +178,9 @@ function plantData() {
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
                     modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-2"></div>`
+                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
-                    $('.orb-2').on('click', function () {
+                    $('.orb-1').on('click', function () {
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
