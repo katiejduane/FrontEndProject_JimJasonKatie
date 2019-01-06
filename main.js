@@ -22,46 +22,42 @@ $(document).ready(() => {
 let cropInfo = [
     {
         crop: "Blueberries",
-        nativeTo: "North America",
-        latinName: "Vaccinium corymbosum",
+        nativeTo: "Origin: North America,",
+        latin: "Latin: Vaccinium corymbosum",
         historicalFact: "Blueberries are one of only three berries native to North America. The continent’s earliest inhabitants were first to use the tiny berries, both fresh and dried, for their flavor, nutrition and healing qualities.",
         medicinal: "Blueberries have the highest antioxidant capacity of all the popular fruits and vegetables. They contain anthocyanins, other polyphenols and various phytochemicals under preliminary research for their potential role in the human body. ",
         myth: "Native North Americans believed the Wild Blueberry had magical powers. Atop each Wild Blueberry is the base of its earlier flower, a calyx in the shape of a five-pointed star. Legend has it that during a time of starvation, the Great Spirit sent these “star berries” down from the heavens to relieve the hunger of his children. These early inhabitants were the first to burn their Wild Blueberry barrens to encourage the growth of new plants. ",
-        symbolism: "Protection",
-        georgia: "The blueberry industry is concentrated in the flatwoods of southeast Georgia.. In 2014, Georgia produced more bueberries than any other state."
+        georgia: "The blueberry industry is concentrated in the flatwoods of southeast Georgia. In 2014, Georgia produced more bueberries than any other state."
     },
 
     {
         crop: "Peaches",
-        nativeTo: "Northwest China",
-        latinName: "Prunus persica",
+        nativeTo: "Origin: Northwest China,",
+        latin: "Latin: Prunus persica",
         historicalFact: "The name persica refers to its widespread cultivation in Persia (modern-day Iran), from where it was transplanted to Europe.",
         medicinal: "According to a study from Texas A&M, stone fruit like peaches, plums, and nectarines have been shown to ward off obesity-related diseases such as diabetes, metabolic syndrome, and cardiovascular disease.",
         myth: "In Chinese mythology, 'Peaches of Immoirtality' are consumed by people to make them importal. They also frequently appear as symbols of longevity in Chinese paintings, fables, and sculpture.",
-        symbolism: "Peaches are often symbols of rebirth, fertility, and immortality; in ancient Greece, a happy marriage. ",
         georgia: "Georgia ranks third, in the US, for peach production, but China wins for the world.",
 
     },
 
     {
         crop: "Honey",
-        latinName: "Apis mellifera (though, that's the honey bee.)",
-        nativeTo: "Anywhere that has flowers or trees",
+        nativeTo: "Origin: Anywhere that has flowers or trees,",
+        latin: "Latin: apis mellifera (though, that's the honey bee.)",
         historicalFact: "Humans have been cultivating honey since ancient times. A cave painting of a honey-seeker in Valencia Spain dates back 8,000 years.",
         medicinal: "Honey can be used to treat mild burns, chronic and acute coughs, and can also be useful for controlling the side effects of radiation and chemotherapy. Its antibiotic porperites are currently being researched.",
         myth: "In ancient Greece, the food of Zeus and the Twelve Gods of Olympus was honey in the form of nectar and ambrosia--conferring immortality and longevity.",
-        symbolism: "Sweetness, Prosperity",
         georgia: "Decatur is Georgia's first officially 'Bee-Friendly city. Georgia also has a State Prison Beekeeping Program. Types of honey commonly sold in Georgia are Orange Blossom, Sourwood, Tupelo, Tulip Poplar, Clover, Gallberry, and Wildflower Honey."
     },
 
     {
-        crop: "Collards",
-        nativeTo: "Greece",
-        latinName: "Brassica oleracea",
+        crop: "Collard Greens,",
+        nativeTo: "Origin: Greece",
+        latin: "Latin: brassica oleracea",
         historicalFact: "They've been eaten for at least 2000 years, with evidence pointing to Ancient Greeks cultivating several varities.",
-        medicinal: "Collards are tastier and more nutritious when cultivated in the colder months. Collard greens have been associated with cancer prevention, detox support, anti-inflammatory properties, heart health, and digestive support.",
+        medicinal: "Collard greens are tastier and more nutritious when cultivated in the colder months. They've have been associated with cancer prevention, detox support, anti-inflammatory properties, heart health, and digestive support.",
         myth: "Eating collards greens on New Years Day is said to bring one good luck.",
-        symbolism: "Collard greens are iconic of the American South",
         georgia: "A popular cultivar of collard greens includes the 'Georgia Southern'."
 
     },
@@ -71,55 +67,42 @@ let cropInfo = [
 let critterInfo = [
     {
         critter: "Hogs",
-        latinName: "Latin: sus scrofa (domesticus) or sus indicus",
-        produce: "Tattoo artists use their skin for practice and doctors use their organs for preclinical study because they are so close to those of humans.",
-        historicalFact: "While mankind domesticated the beast, they are the only species known that can revert to a feral animal in under one generation. When left alone and uncared for, their hide regrows, teeth grow to tusks, and disposition becomes far less amenable.",
-        medicinal: "Pig insulin can be used for diabetes treatment, gelatin for pills, porcine burn dressings, even their hearts can be used for xenotransplantation.",
-        myth: "In their Asian origin, the year of the pig is important. They historically represent a beautiful personality and are blessed with good fortune in life.",
+        latin: "Latin: sus scrofa (domesticus) or sus indicus.",
+        fact1: "Tattoo artists use their skin for practice and doctors use their organs for preclinical study.",
+        fact2: "Pigs can return to a feral state in less than one generation; when left alone and uncared for, their hide regrows, teeth grow into tusks, and disposition becomes far less amenable.",
+        myth: "",
         symbolism: "In Yin and Yang, the pig is the yin; soft, cool, and yielding. In Asian cultures, they symbolize wealth. In Western cultures, they symbolize excess, laziness, awkwardness, and obesity.",
-        georgia: "Feral pigs in Georgia, especially the south, are wreaking havoc in local farms. Domesticated pigs are farmed as typical (inhumanely, mostly) to other states.",
-        weirdFact: "Pigs can tell when they have done something a person likes, and can duplicate it. They also can make enjoyable pets.",
-        funFact: "Their intelligence level is inferior only to some apes, dolphins, and elephants. They can play certain concentration games with higher success and focus than a chimpanzee."
+       
     },
 
     {
-        critter: "Cows",
-        latinName: `a`,
-        historicalFact: "b",
-        medicinal: "c",
-        myth: "d",
-        symbolism: "e",
-        georgia: "f",
-        weirdFact: `g`,
-        funFact: `h`,
-        trivia: "i",
+        critter: "Cattle",
+        latin: "Latin: Bos taurus",
+        fact1: "Calves can discriminate between humans based on previous experience, as shown by approaching those who handled them positively and avoiding those who handled them aversively. In audio play-back studies, calves prefer their own mother's vocalizations compared to the vocalizations of an unfamiliar mother.",
+        fact2: "Cattle are very gregarious and even short-term isolation is considered to cause severe psychological stress; mirrors are sometimes used to calm cows that are isolated.",
+        myth: "The cow-headed Egyption goddess Hathor was originally a personification of the Milky Way, which was considered to be the milk that flowed from the udders of a heavenly cow.",
+        symbolism: "Cattle are considered sacred in world religions such as Hinduism, Jainism, and Buddhism, symbolizing patience, abundance, gentleness, and holiness.",
+       
     },
 
     {
         critter: "Chickens",
-        latinName: "Latin: gallus gallus (domesticus)",
-        produce: "Eggs and Poultry(Broilers)",
-        historicalFact: "Descended fom the Red Junglefowl, Chickens were first domesticated around 3,000 B.C. they helped keep pests (grubs, bugs, beetles, worms, etc...) out of owner's crops and fields, and their excrement was good for fertilizer.",
-        myth: "Chickens are used in some (predominantly Voodoo or Voodoo derivatives) religions for ritual sacrifice. Fortune-tellers have also read their entrails for milennia. They were the sacred bird of the Goddess Athens, the Goddess of wisdom and warfare. Chickens were so sacred in Ancient Greece that they were kept for eggs and religious purposes only.",
-        medicinal: "Chicken meat has a high protein/fat ratio, which is helpful in weight management and bodybuilding. Eggs are low in sugar and high in protein as well. They are very healthy alternatives to other foods, but it's worth noting also high in cholesterol.",
-        symbolism: "In Roman times, chickens were related to the Sun God, and their clucking was related to Eros (erotic love). They were a symbol of commerce and productivity as well.",
-        georgia: "Many homes in Georgia raise chickens independently, but they are also farmed in large numbers for large scale consumption. Different breeds are used for meat or eggs.",
-        weirdFact: `Chickens have been used for thousands of years for man's entertaiment in cockfighting. Male chickens, or cocks, have spurs on their legs and can be very aggressive.`,
-        funFact: `The humble chicken is arguably the closest living relative to the Tyrannosaurus Rex.`,
+        latin: "Latin: gallus gallus (domesticus)",
+        fact1: "The humble chicken is arguably the closest living relative to the Tyrannosaurus Rex.",
+        fact2: "While Chickens have been domesticated for 5,000 years, they descended fom the Red Junglefowl in southeast Asia. The male Junglefowl's tail is composed of long, arching feathers that initially look black, but shimmer with blue, purple, and green in bright light.",
+        myth: "They are used in some (predominantly Voodoo or Voodoo derivatives) religions for ritual sacrifice. Fortune-tellers have also read their entrails for milennia. They were the sacred bird of the Goddess Athens, the Goddess of wisdom and warfare.",
+        symbolism: "In Roman times, chickens were related to the Sun God, and their clucking was related to Eros (erotic love). They were also symbolic of commerce and productivity.",
 
     },
 
     {
         critter: "Goat",
-        latinName: `a`,
-        historicalFact: "b",
-        medicinal: "c",
-        myth: "d",
-        symbolism: "e",
-        georgia: "f",
-        weirdFact: `g`,
-        funFact: `h`,
-        trivia: "i",
+        latin: "Latin: capra aegagrus hircus",
+        fact1: "Goats are naturally curious, exploring anything new or unfamiliar in their surroundings. They are also agile and known for their ability to balance in precarious places; they frequently climb trees.",
+        fact2: "Research conducted to test communication skills found that the goats will look to a human for assistance when faced with a challenge that had previously been mastered, but was then modified",
+        myth: "Popular Christian folk tradition in Europe associated Satan with imagery of goats. A common superstition in the Middle Ages was that goats whispered lewd sentences in the ears of the saints.",
+        symbolism: "The faun is a mythological half human–half goat creature appearing in Ancient Rome. They were a symbol of fertility, and were said to inspire fear in men traveling in lonely, remote, or wild places.",
+    
     }
 ]
 
@@ -162,12 +145,11 @@ function animalData() {
                 modal1.style.display = 'block';
                 backdrop.style.display = 'block';
                 modal1HTML =
-                    `<div class="names">${critterInfo[i].critter}, ${critterInfo[i].latinName}</div>
-            <div class="facts1"> ${critterInfo[i].produce}, ${critterInfo[i].historicalFact}</div> <div class="orb-1"></div>`
+                    `<h3 class="animal-name">${critterInfo[i].critter}</h3> <div class="animal-latin"> ${critterInfo[i].latin}</div>
+            <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
-                    modal1HTML = `<div class="facts2">${critterInfo[i].medicinal}</div>
-                <div class="myths"> ${critterInfo[i].myth}, ${critterInfo[i].symbolism}</div> <div class="orb-2"></div>`
+                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-2"></div>`
                     $(modal1).html(modal1HTML)
                     $('.orb-2').on('click', function () {
                         modal1.style.display = 'none';
@@ -191,12 +173,12 @@ function plantData() {
                 modal1.style.display = 'block';
                 backdrop.style.display = 'block';
                 modal1HTML =
-                    `<div class="names">${cropInfo[i].crop}, ${cropInfo[i].latinName}, ${cropInfo[i].nativeTo}</div>
+                    `<h3 class="crop-name">${cropInfo[i].crop}</h3> <div class="plant-latin-origin"> ${cropInfo[i].latin} ${cropInfo[i].nativeTo}</div>
             <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
                     modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-                <div class="myths"> ${cropInfo[i].myth}, ${cropInfo[i].symbolism}</div> <div class="orb-2"></div>`
+                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-2"></div>`
                     $(modal1).html(modal1HTML)
                     $('.orb-2').on('click', function () {
                         modal1.style.display = 'none';
