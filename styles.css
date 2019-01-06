@@ -22,16 +22,19 @@ body{
     height: 150px;
     border-radius: 50%;
     background-color: rebeccapurple;
-    margin: 20px auto;
+    margin: 30px auto;
     box-shadow: 3px 3px 30px 20px rgba(241, 69, 69, 0.863);
 }
 
+.sun:hover {
+    box-shadow: 3px 3px 30px 20px rgba(252, 204, 46, 0.863);
+}
 
 .main{
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
     /* background: lightgreen; */
     margin: 8px;
 }
@@ -70,20 +73,28 @@ body{
     margin-bottom: 10px;
     height: 200px;
     width: 200px;
-    background-color: red;
     border-radius: 5%;
     z-index: 0
 }
 
 #card1 {
-    /* width: 100px; */
-    background-size: 10%;
-    background: url(images/bull.png) center center no-repeat;
+    background: rgb(241, 221, 152) url(images/pig-sm.png) center center no-repeat;
+    background-size: 90%;
 }
 
-.main img {
-    width: 90%;
-    vertical-align: middle;
+#card2 {
+    background: rgb(241, 221, 152) url(images/bull-sm.png) center center no-repeat;
+    background-size: 90%;
+}
+
+#card3 {
+    background: rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat;
+    background-size: 90%;
+}
+
+#card4 {
+    background:  rgb(241, 221, 152) url(images/goat.png) center center no-repeat;
+    background-size: 90%;
 }
 
 .nav{
@@ -160,25 +171,64 @@ body{
 }
 
 
-.modal {
+.modal-1 {
   position: fixed;
   display: none;
   z-index: 200;
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  background: white;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  top: 10%;
+  left: 15%;
+  width: 60vw;
+  background: rgb(177, 218, 199);
+  border-radius: 5px;
+  padding: 15px;
+  
 }
 
 .modal_title {
   text-align: center;
+  padding: 5px;
   margin: 0 0 1rem 0;
 }
 
-.modal_actions {
+.modal-2 {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 10%;
+  left: 15%;
+  width: 60vw;
+  background: rgb(155, 138, 231);
+  border-radius: 5px;
+  padding: 15px;
+  
+}
+
+.orb-1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(253, 93, 245);
+    box-shadow: 0px 0px 20px 10px rgba(235, 180, 27, 0.863);
+    margin: 5px auto;
+    text-align: center;
+}
+
+.orb-2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(253, 93, 245);
+    box-shadow: 0px 0px 20px 10px rgba(235, 180, 27, 0.863);
+    margin: 5px auto;
+    text-align: center;
+}
+
+orb-1 {
+    box-shadow: 0px 0px 20px 10px rgba(27, 235, 155, 0.863);
+}
+
+
+/* .modal_actions {
   text-align: center;
 }
 
@@ -196,5 +246,5 @@ body{
 .modal_action:active {
   background: #2ddf5c;
   border-color: #2ddf5c;
-}
+} */
 
