@@ -30,8 +30,7 @@ body{
     box-shadow: 3px 3px 30px 20px rgba(252, 204, 46, 0.863);
 }
 
-
-.main {
+.main{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -97,8 +96,6 @@ body{
     background:  rgb(241, 221, 152) url(images/goat.png) center center no-repeat;
     background-size: 90%;
 }
-
-
 
 .nav{
     display: flex;
