@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: lightblue;
+    background: linear-gradient(to bottom, #2d8acd, white);
   }
 
 .backdrop {
@@ -89,9 +89,9 @@ orb-1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: rebeccapurple;
+    background-color: #d9ff00;
     margin: 30px auto;
-    box-shadow: 3px 3px 30px 20px rgba(241, 69, 69, 0.863);
+    box-shadow: 0px 0px 60px 25px rgba(252, 3, 169, 0.85);
 }
 
 .main{
@@ -212,45 +212,50 @@ orb-1 {
         display: flex;
         justify-content: flex-start;
         margin: 0 auto;
+        width: 100%;
+        height: 3rem;
     }
 
     .sun {
-        width: 8vw;
-        height: 8vw;
+        position: fixed;
+        margin: 3rem;
+        top: 1rem;
+        left: 3rem;
+        width: 10vw;
+        height: 10vw;
         min-width: 88px;
         min-height: 88px;
-        margin-left: 10rem;
-        margin-top: 2rem;
-        box-shadow: 0px 0px 20px 10px rgba(241, 69, 69, 0.863);
     }
 
     .sun:hover{
         box-shadow: 0px 0px 1000px 800px rgba(241, 69, 69, 0.863);
         transition: box-shadow 10s;
+
     }
 
     .main{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 2rem auto;
+        margin:5rem auto;
+        /* width: 100vw; */
     }
 
     .circle {
-        clip-path: circle(125px at center);
-        margin:auto;
-        width: 250px;
-        height: 250px;
-        margin: .5rem auto;
-        background-color: white;
+        clip-path: circle(250px at center);
+        /* margin: 2rem auto; */
+        width: 500px;
+        height: 500px;
+        /* margin: .5rem auto; */
+        background-color: rgb(60, 73, 150, 0.7);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .card-wrapper {
-        width: 125px;
-        height: 125px;
+        width: 300px;
+        height: 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -260,21 +265,39 @@ orb-1 {
 
     .card {
         margin: 0px;
-        width: 62.5px;
-        height: 62.5px;
-        min-width: 52px;
-        min-height: 52px;
+        width: 145px;
+        height: 145px;
         background-color: red;
         transition: transform  1s;
     }
 
+    #card1 {
+        background: rgb(241, 221, 152) url(images/pig-sm.png) center center no-repeat;
+        background-size: 90%;
+    }
+
+    #card2 {
+        background: rgb(241, 221, 152) url(images/bull-sm.png) center center no-repeat;
+        background-size: 90%;
+    }
+
+    #card3 {
+        background: rgb(241, 221, 152) url(images/chicken-sm.png) center center no-repeat;
+        background-size: 90%;
+    }
+
+    #card4 {
+        background:  rgb(241, 221, 152) url(images/goat-sm.png) center center no-repeat;
+        background-size: 90%;
+    }
+
     #card1{
         border-radius: 50% 0 0 0;
-        background-size: 50%;
+        background-size: 90%;
     }
 
     #card1:hover{
-        transform: scale(2.5) translate(-18.5px, -18.5px);
+        transform: scale(2) translate(-35px, -35px);
         /* background-image: linear-gradient(to bottom right, lightgoldenrodyellow, red); */
     }
 
@@ -291,7 +314,7 @@ orb-1 {
     }
 
     #card2:hover{
-        transform: scale(2.5) translate(18.5px, -18.5px);
+        transform: scale(2) translate(35px, -35px);
         /* border-radius: 10% 50% 10% 0; */
     }
 
@@ -308,7 +331,7 @@ orb-1 {
     }
 
     #card3:hover{
-        transform: scale(2.5) translate(-18.5px, 18.5px);
+        transform: scale(2) translate(-35px, 35px);
     }
 
     #card3.ease{
@@ -324,7 +347,7 @@ orb-1 {
     }
 
     #card4:hover{
-        transform: scale(2.5) translate(18.5px, 18.5px);
+        transform: scale(2) translate(35px, 35px);
     }
 
     #card4.ease{
@@ -373,16 +396,19 @@ orb-1 {
     .footer{
         display: flex;
         justify-content: flex-end;
+        height:5rem;
     }
 
     .compass {
+        position: relative;
+        bottom: 10rem;
+        right: 4rem;
         width: 5vw;
         height: 5vw;
         min-width: 52px;
         min-height: 52px;
         padding: 1rem;
-        align-self: flex-end;
-        margin-right: 8rem;
+        margin: 2rem;
         box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
     }
 
