@@ -1,5 +1,35 @@
 $(document).ready(() => {
 
+// Jim's stuff-->
+
+    $('.button').click((event) => {
+        event.preventDefault()
+        if (toggle === `visible`){
+            $('#map').css(`visibility`, toggle)
+            toggle = `hidden`
+        } else{
+            $('#map').css(`visibility`, toggle)
+            toggle = `visible`
+        }  
+    })
+
+})//end ready form
+
+// More of Jim's stuff -->
+function initMap() {
+    var gaMiddle = {lat: 32.838131, lng: -83.634705}
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
+    map.setMapTypeId(`hybrid`)
+    var marker = new google.maps.Marker({
+        position: gaMiddle,
+        map:map,
+        icon: `./images/map_icon.png`,
+        animation: google.maps.Animation.BOUNCE
+    })
+    marker.setMap(map)
+}
+
+
     //=========================== *** farmData! *** ============================//
 
     //plants
@@ -173,31 +203,31 @@ $(document).ready(() => {
         },  
     ]
 
-    //========================= *** farmData END! *** ==========================//
+//========================= *** farmData END! *** ==========================//
 
-    // variables for HTML elements that need to be changed with JS
-    let backdrop = document.querySelector('.backdrop');
-    let cardButtons = document.querySelectorAll('.card');
-    let modal1 = document.querySelector('.modal-1');
-    let orb1 = document.querySelector('.orb-1');
-    let animalButton = document.querySelector('#animals');
-    let plantButton = document.querySelector('#plants');
-    let aboutButton = document.querySelector('#about');
-    let main = document.querySelector('.main')
-    let toggle = `hidden`
-    //booleans for page START (they change when clicking the nav buttons!)
-    let animals = true;
-    let plants = false;
-    let about = false;
+// variables for HTML elements that need to be changed with JS
+let backdrop = document.querySelector('.backdrop');
+let cardButtons = document.querySelectorAll('.card');
+let modal1 = document.querySelector('.modal-1');
+let orb1 = document.querySelector('.orb-1');
+let animalButton = document.querySelector('#animals');
+let plantButton = document.querySelector('#plants');
+let aboutButton = document.querySelector('#about');
+let main = document.querySelector('.main')
+let toggle = `hidden`
+//booleans for page START (they change when clicking the nav buttons!)
+let animals = true;
+let plants = false;
+let about = false;
 
-    // so clicking thebackdrop closes the modal
-    $('.backdrop').on('click', function () {
-        backdrop.style.display = 'none';
-        modal1.style.display = 'none';
-    })
+// so clicking thebackdrop closes the modal
+$('.backdrop').on('click', function () {
+    backdrop.style.display = 'none';
+    modal1.style.display = 'none';
+})
 
-    //looping through both plant and animal objects!
-    function farmData() {
+// /looping through both plant and animal objects!
+function farmData() {
         let modal1HTML = "";
         let card1 = document.querySelector('#card1');
         let card2 = document.querySelector('#card2');
@@ -266,14 +296,14 @@ $(document).ready(() => {
             }
         }
     }
-}
+
 
 farmData()
 
 
 // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
 // COULD THIS ALL BE DONE IN A FOR LOOP? ONE FOR EACH BUTTON CLICK? (PLANT/ANIMAL)
-$(plantButton).on('click', function () {
+$('#plants').on('click', function () {
     plants = true;
     animals = false;
     about = false;
@@ -376,33 +406,3 @@ $(aboutButton).on('click', function () {
     $('#card4').css('background-size', '90%');
     farmData();
 })
-
-
-// Jim's stuff-->
-
-    $('.button').click((event) => {
-        event.preventDefault()
-        if (toggle === `visible`){
-            $('#map').css(`visibility`, toggle)
-            toggle = `hidden`
-        } else{
-            $('#map').css(`visibility`, toggle)
-            toggle = `visible`
-        }  
-    })
-
-})//end ready form
-
-// More of Jim's stuff -->
-function initMap() {
-    var gaMiddle = {lat: 32.838131, lng: -83.634705}
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
-    map.setMapTypeId(`hybrid`)
-    var marker = new google.maps.Marker({
-        position: gaMiddle,
-        map:map,
-        icon: `./images/map_icon.png`,
-        animation: google.maps.Animation.BOUNCE
-    })
-    marker.setMap(map)
-}
