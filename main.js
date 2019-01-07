@@ -106,6 +106,25 @@ let critterInfo = [
     }
 ]
 
+let aboutInfo = [
+    {
+        name: "Katie",
+        meaning: "The name Kathryn is: pure, clear. From the Latin Katharina",
+    },
+    {
+        name: "Jason",
+        meaning: "The name Jason: healing. The name was borne in Greek mythology. Var: Jayson", 
+    },
+    {
+        name: "Jeremy",
+        meaning: "From the given name Jeremiah. The weeping prophet",
+    },
+    {
+        name: "Pithos",
+        meaning: "The Greek name for a container or vessel. A farm is a kind of container. So is a website",
+    }
+]
+
 //========================= *** farmData END! *** ==========================//
 
 
@@ -114,10 +133,6 @@ let backdrop = document.querySelector('.backdrop');
 let cardButtons = document.querySelectorAll('.card');
 let modal1 = document.querySelector('.modal-1');
 let orb1 = document.querySelector('.orb-1');
-// let card1 = document.querySelector('#card1');
-// let card2 = document.querySelector('#card2');
-// let card3 = document.querySelector('#card3');
-// let card4 = document.querySelector('#card4');
 let animalButton = document.querySelector('#animals');
 let plantButton = document.querySelector('#plants');
 let aboutButton = document.querySelector('#about');
@@ -126,6 +141,7 @@ let main = document.querySelector('.main')
 //booleans for page START (they change when clicking the nav buttons!)
 let animals = true;
 let plants = false;
+let about = false;
 
 // so clicking thebackdrop closes the modal
 $('.backdrop').on('click', function () {
@@ -133,8 +149,8 @@ $('.backdrop').on('click', function () {
     modal1.style.display = 'none';
 })
 
-// looping through the farmFata object
-function animalData() {
+//looping through both plant and animal objects!
+function farmData() {
     let modal1HTML = "";
     let card1 = document.querySelector('#card1');
     let card2 = document.querySelector('#card2');
@@ -160,20 +176,9 @@ function animalData() {
                 })
             })
         }
-    }
-}
-animalData();
-
-//function call for plant and animal data!
-// i think i should be able to put this all in one function...?
-function plantData() {
-    let modal1HTML = "";
-    let card1 = document.querySelector('#card1');
-    let card2 = document.querySelector('#card2');
-    let card3 = document.querySelector('#card3');
-    let card4 = document.querySelector('#card4');
-    let plantCards = [card1, card2, card3, card4];
-    if (plants == true) {
+    } else if (plants == true) {
+        let modal1HTML = "";
+        let plantCards = [card1, card2, card3, card4]
         console.log("plant")
         for (let i = 0; i < cropInfo.length; i++) {
             console.log('plant2')
@@ -196,9 +201,26 @@ function plantData() {
                 })
             })
         }
+    } else if (about == true){
+        let modal1HTML = "";
+        let aboutCards = [card1, card2, card3, card4]
+        for (let i = 0; i < aboutInfo.length; i++) {
+            $(aboutCards[i]).on('click', function (){
+                modal1.style.display = 'flex';
+                backdrop.style.display = 'block';
+                modal1HTML = 
+                    `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
+                $(modal1).html(modal1HTML)
+                $('.orb-1').on('click', function(){
+                    modal1.style.display = 'none';
+                    backdrop.style.display = 'none';
+                })
+            })
+        }
     }
 }
-plantData();
+
+farmData()
 
 
 // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
@@ -206,6 +228,7 @@ plantData();
 $(plantButton).on('click', function () {
     plants = true;
     animals = false;
+    about = false;
     let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
@@ -225,12 +248,13 @@ $(plantButton).on('click', function () {
     $('#card3').css('background-size', '90%');
     $('#card4').css('background', 'lightgoldenrodyellow url(images/collard-sm.png) center center no-repeat');
     $('#card4').css('background-size', '90%');
-    plantData();
+    farmData();
 });
 
 $(animalButton).on('click', function () {
     animals = true;
     plants = false;
+    about = false;
     let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
@@ -250,13 +274,33 @@ $(animalButton).on('click', function () {
     $('#card3').css('background-size', '90%');
     $('#card4').css('background', 'lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat');
     $('#card4').css('background-size', '90%');
-    animalData();
+    farmData();
 });
 
 $(aboutButton).on('click', function () {
-
     animals = false;
     plants = false;
+    about = true;
+    let mainHTML = `
+     <div class="circle">
+        <div class="card-wrapper">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+        </div>
+    </div>`
+    $(main).html(mainHTML)
+    console.log("hi")
+    $('#card1').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card1').css('background-size', '90%');
+    $('#card2').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card2').css('background-size', '90%');
+    $('#card3').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card3').css('background-size', '90%');
+    $('#card4').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card4').css('background-size', '90%');
+    farmData();
 })
 
 
@@ -291,3 +335,76 @@ $(aboutButton).on('click', function () {
 //     })
 // })
 // })
+
+
+// looping through the farmFata object
+// function animalData() {
+//     let modal1HTML = "";
+//     let card1 = document.querySelector('#card1');
+//     let card2 = document.querySelector('#card2');
+//     let card3 = document.querySelector('#card3');
+//     let card4 = document.querySelector('#card4');
+//     let animalCards = [card1, card2, card3, card4];
+//     if (animals == true) {
+//         for (let i = 0; i < critterInfo.length; i++) {
+//             $(animalCards[i]).on('click', function () {
+//                 modal1.style.display = 'flex';
+//                 backdrop.style.display = 'block';
+//                 modal1HTML =
+//                     `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
+//             <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
+//                 $(modal1).html(modal1HTML)
+//                 $('.orb-1').on('click', function () {
+//                     modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
+//                     $(modal1).html(modal1HTML)
+//                     $('.orb-1').on('click', function () {
+//                         modal1.style.display = 'none';
+//                         backdrop.style.display = 'none';
+//                     })
+//                 })
+//             })
+//         }
+//     }
+// }
+// animalData();
+
+// //function call for plant and animal data!
+// // i think i should be able to put this all in one function...?
+// function plantData() {
+//     let modal1HTML = "";
+//     let card1 = document.querySelector('#card1');
+//     let card2 = document.querySelector('#card2');
+//     let card3 = document.querySelector('#card3');
+//     let card4 = document.querySelector('#card4');
+//     let plantCards = [card1, card2, card3, card4];
+//     if (plants == true) {
+//         console.log("plant")
+//         for (let i = 0; i < cropInfo.length; i++) {
+//             console.log('plant2')
+//             $(plantCards[i]).on('click', function () {
+//                 console.log('boo')
+//                 modal1.style.display = 'flex';
+//                 backdrop.style.display = 'block';
+//                 modal1HTML =
+//                     `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
+//             <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
+//                 $(modal1).html(modal1HTML)
+//                 $('.orb-1').on('click', function () {
+//                     modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
+//                 <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
+//                     $(modal1).html(modal1HTML)
+//                     $('.orb-1').on('click', function () {
+//                         modal1.style.display = 'none';
+//                         backdrop.style.display = 'none';
+//                     })
+//                 })
+//             })
+//         }
+//     }
+// }
+// plantData();
+
+// let card1 = document.querySelector('#card1');
+// let card2 = document.querySelector('#card2');
+// let card3 = document.querySelector('#card3');
+// let card4 = document.querySelector('#card4');

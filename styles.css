@@ -258,7 +258,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 2rem auto;
+        margin: 0 auto;
         /* width: 100vw; */
     }
 
@@ -284,6 +284,7 @@ body{
         justify-content: space-around;
         align-content: space-around;
         flex-direction: row;
+        margin-top: 0;
     }
 
     .card {
@@ -293,6 +294,7 @@ body{
         transition: transform 1s;
         border-radius: 5%;
         margin-bottom: 0px;
+      
     }
 
     #card1 {
@@ -358,6 +360,7 @@ body{
         display: flex;
         /* flex-direction: column; */
         padding: 10px;
+        margin: 1.5rem;
     
     }
 
@@ -397,7 +400,7 @@ body{
     .footer{
         display: flex;
         justify-content: flex-end;
-        height:5rem;
+        /* height:5rem; */
     }
 
     .compass {
@@ -448,7 +451,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
     
     .circle {
@@ -613,7 +616,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
     
     .circle {
