@@ -113,9 +113,7 @@ let critterInfo = [
 let backdrop = document.querySelector('.backdrop');
 let cardButtons = document.querySelectorAll('.card');
 let modal1 = document.querySelector('.modal-1');
-let modal2 = document.querySelector('.modal-2');
 let orb1 = document.querySelector('.orb-1');
-let orb2 = document.querySelector('.orb-2');
 let card1 = document.querySelector('#card1');
 let card2 = document.querySelector('#card2');
 let card3 = document.querySelector('#card3');
@@ -133,7 +131,6 @@ let plants = false;
 $('.backdrop').on('click', function () {
     backdrop.style.display = 'none';
     modal1.style.display = 'none';
-    modal2.style.display = 'none';
 })
 
 // looping through the farmFata object
@@ -143,10 +140,10 @@ function animalData() {
     if (animals == true) {
         for (let i = 0; i < critterInfo.length; i++) {
             $(animalCards[i]).on('click', function () {
-                modal1.style.display = 'block';
+                modal1.style.display = 'flex';
                 backdrop.style.display = 'block';
                 modal1HTML =
-                    `<h3 class="animal-name">${critterInfo[i].critter}</h3> <div class="animal-latin"> ${critterInfo[i].latin}</div>
+                    `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
             <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
@@ -169,12 +166,15 @@ function plantData() {
     let modal1HTML = "";
     let plantCards = [card1, card2, card3, card4];
     if (plants == true) {
+        console.log("plant")
         for (let i = 0; i < cropInfo.length; i++) {
+            console.log('plant2')
             $(plantCards[i]).on('click', function () {
+                console.log('boo')
                 modal1.style.display = 'block';
                 backdrop.style.display = 'block';
                 modal1HTML =
-                    `<h3 class="crop-name">${cropInfo[i].crop}</h3> <div class="plant-latin-origin"> ${cropInfo[i].latin} ${cropInfo[i].nativeTo}</div>
+                    `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
             <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
                 $(modal1).html(modal1HTML)
                 $('.orb-1').on('click', function () {
@@ -192,54 +192,59 @@ function plantData() {
 }
 plantData();
 
+
 // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
 //animal, plant and about button code!
 $(plantButton).on('click', function () {
     plants = true;
     animals = false;
-    plantData();
-    let mainHTML = "";
-    mainHTML = `<div class="circle">
-                <div class="card-wrapper">
-                    <div class="card" id="card1"></div>
-                    <div class="card" id="card2"></div>
-                    <div class="card" id="card3"></div>
-                    <div class="card" id="card4"></div>
-                </div> 
-            </div>`
+    let mainHTML = `<section class="main">
+    <div class="circle">
+        <div class="card-wrapper">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+        </div>
+    </div>
+        </section >`
     $(main).html(mainHTML)
-    $(card1).css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
-    $(card1).css('background-size', '90%');
-    $(card2).css('background', 'lightgoldenrodyellow url(images/peach-sm.png) center center no-repeat');
-    $(card2).css('background-size', '90%');
-    $(card3).css('background', 'lightgoldenrodyellow url(images/honeybee-sm.png) center center no-repeat');
-    $(card3).css('background-size', '90%');
-    $(card4).css('background', 'lightgoldenrodyellow url(images/collard-sm.png) center center no-repeat');
-    $(card4).css('background-size', '90%');
+    console.log("hi")
+    $('#card1').css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
+    $('#card1').css('background-size', '90%');
+    $('#card2').css('background', 'lightgoldenrodyellow url(images/peach-sm.png) center center no-repeat');
+    $('#card2').css('background-size', '90%');
+    $('#card3').css('background', 'lightgoldenrodyellow url(images/honeybee-sm.png) center center no-repeat');
+    $('#card3').css('background-size', '90%');
+    $('#card4').css('background', 'lightgoldenrodyellow url(images/collard-sm.png) center center no-repeat');
+    $('#card4').css('background-size', '90%');
+    plantData();
 });
 
 $(animalButton).on('click', function () {
     animals = true;
     plants = false;
-    animalData();
-    let mainHTML = "";
-    mainHTML = `<div class="circle">
-                <div class="card-wrapper">
-                    <div class="card" id="card1"></div>
-                    <div class="card" id="card2"></div>
-                    <div class="card" id="card3"></div>
-                    <div class="card" id="card4"></div>
-                </div> 
-            </div>`
+    let mainHTML = `<section class="main">
+    <div class="circle">
+        <div class="card-wrapper">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+        </div>
+    </div>
+        </section >`
     $(main).html(mainHTML)
-    $(card1).css('background', 'lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat');
-    $(card1).css('background-size', '90%');
-    $(card2).css('background', 'lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat');
-    $(card2).css('background-size', '90%');
-    $(card3).css('background', 'lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat');
-    $(card3).css('background-size', '90%');
-    $(card4).css('background', 'lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat');
-    $(card4).css('background-size', '90%');
+    console.log("hi")
+    $('#card1').css('background', 'lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat');
+    $('#card1').css('background-size', '90%');
+    $('#card2').css('background', 'lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat');
+    $('#card2').css('background-size', '90%');
+    $('#card3').css('background', 'lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat');
+    $('#card3').css('background-size', '90%');
+    $('#card4').css('background', 'lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat');
+    $('#card4').css('background-size', '90%');
+    animalData();
 });
 
 $(aboutButton).on('click', function () {
@@ -247,12 +252,6 @@ $(aboutButton).on('click', function () {
     animals = false;
     plants = false;
 })
-
-//i think we shoudl have separate files for the ABOUT PAGE because we'd have to re-write all the 
-//html for the cards after clicking the about button!
-
-
-
 
 
 
