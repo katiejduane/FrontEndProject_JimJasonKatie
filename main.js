@@ -102,7 +102,7 @@ let animalButton = document.querySelector('#animals');
 let plantButton = document.querySelector('#plants');
 let aboutButton = document.querySelector('#about');
 let main = document.querySelector('.main')
-
+let toggle = `hidden`
 //booleans for page START (they change when clicking the nav buttons!)
 let animals = true;
 let plants = false;
@@ -229,11 +229,6 @@ $(aboutButton).on('click', function () {
     plants = false;
 })
 
-let toggle =  `visible` // set variable to allow button to toggle map appearance
-function initMap() {
-    var gaMiddle = {lat: 32.838131, lng: -83.634705}
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
-    }
 $('.button').click((event) => {
     event.preventDefault()
     if (toggle === `visible`){
@@ -245,122 +240,18 @@ $('.button').click((event) => {
     }  
 })
 
-
-
-
-// =========================== retired code =============================== //
-// retired click functions...
-// for (let i = 0; i < cardButtons.length; i++) {
-//     cardButtons[i].addEventListener('click', function(){
-//         modal1.style.display = 'block';
-//         backdrop.style.display = 'block';
-//     })
-// }
-
-// $('#card1').on('click', function() {
-//     modal1.style.display = 'block';
-//     backdrop.style.display = 'block';
-//     modal1HTML = `<div class="animal-names">${critterInfo[0].critter}, ${critterInfo[0].latinName}</div>
-//     <div class="animal-facts1"> ${critterInfo[0].produce}, ${critterInfo[0].historicalFact}</div> <div class="orb-1"></div>`
-//     $(modal1).html(modal1HTML)
-//     $('.orb-1').on('click', function () {
-//         modal1HTML = `<div class="animal-facts2">${critterInfo[0].medicinal}</div>
-//         <div class="animal-myths"> ${critterInfo[0].myth}, ${critterInfo[0].symbolism}</div> <div class="orb-2"></div>`
-//         $(modal1).html(modal1HTML)
-//         $('.orb-2').on('click', function () {
-//             modal1.style.display = 'none';
-//             backdrop.style.display = 'none';
-//         })
-
-//     })
-// })
-// })
-
-
-// looping through the farmFata object
-// function animalData() {
-//     let modal1HTML = "";
-//     let card1 = document.querySelector('#card1');
-//     let card2 = document.querySelector('#card2');
-//     let card3 = document.querySelector('#card3');
-//     let card4 = document.querySelector('#card4');
-//     let animalCards = [card1, card2, card3, card4];
-//     if (animals == true) {
-//         for (let i = 0; i < critterInfo.length; i++) {
-//             $(animalCards[i]).on('click', function () {
-//                 modal1.style.display = 'flex';
-//                 backdrop.style.display = 'block';
-//                 modal1HTML =
-//                     `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
-//             <div class="facts1"> ${critterInfo[i].fact1} ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
-//                 $(modal1).html(modal1HTML)
-//                 $('.orb-1').on('click', function () {
-//                     modal1HTML = `<div class="myths"> ${critterInfo[i].myth} ${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
-//                     $(modal1).html(modal1HTML)
-//                     $('.orb-1').on('click', function () {
-//                         modal1.style.display = 'none';
-//                         backdrop.style.display = 'none';
-//                     })
-//                 })
-//             })
-//         }
-//     }
-// }
-// animalData();
-
-// //function call for plant and animal data!
-// // i think i should be able to put this all in one function...?
-// function plantData() {
-//     let modal1HTML = "";
-//     let card1 = document.querySelector('#card1');
-//     let card2 = document.querySelector('#card2');
-//     let card3 = document.querySelector('#card3');
-//     let card4 = document.querySelector('#card4');
-//     let plantCards = [card1, card2, card3, card4];
-//     if (plants == true) {
-//         console.log("plant")
-//         for (let i = 0; i < cropInfo.length; i++) {
-//             console.log('plant2')
-//             $(plantCards[i]).on('click', function () {
-//                 console.log('boo')
-//                 modal1.style.display = 'flex';
-//                 backdrop.style.display = 'block';
-//                 modal1HTML =
-//                     `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
-//             <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
-//                 $(modal1).html(modal1HTML)
-//                 $('.orb-1').on('click', function () {
-//                     modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-//                 <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
-//                     $(modal1).html(modal1HTML)
-//                     $('.orb-1').on('click', function () {
-//                         modal1.style.display = 'none';
-//                         backdrop.style.display = 'none';
-//                     })
-//                 })
-//             })
-//         }
-//     }
-// }
-// plantData();
-
-// let card1 = document.querySelector('#card1');
-// let card2 = document.querySelector('#card2');
-// let card3 = document.querySelector('#card3');
-// let card4 = document.querySelector('#card4');
-
-    // console.log ("sanity check")
-
-    // const queryForm = document.querySelector('.google-query-form')
-    // let mapPic = ``
-    // console.log(queryForm)
-    // $('.map').submit((event) => {
-    //     event.preventDefault()
-    //     // const symbol = encodeURI($('#symbol').val())
-    //     $('.compass').html(`
-    //         <iframe width="300px" height="300px" frameborder="0" style="border:0" 
-    //         src="https://www.google.com/maps/embed/v1/search?q=farms%20within%2015%20miles%20of%20my%20location&key=${apiKey}" 
-    //         allowfullscreen></iframe>
-    //     `)
-    // })// end query form
 })//end ready form
+
+
+function initMap() {
+    var gaMiddle = {lat: 32.838131, lng: -83.634705}
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
+    map.setMapTypeId(`hybrid`)
+    var marker = new google.maps.Marker({
+        position: gaMiddle,
+        map:map,
+        icon: `./images/map_icon.png`,
+        animation: google.maps.Animation.BOUNCE
+    })
+    marker.setMap(map)
+}
