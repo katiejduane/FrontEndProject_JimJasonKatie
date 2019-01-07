@@ -259,7 +259,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 2rem auto;
+        margin: 0 auto;
         /* width: 100vw; */
     }
 
@@ -365,6 +365,7 @@ body{
         display: flex;
         /* flex-direction: column; */
         padding: 10px;
+        margin: 1.5rem;
     
     }
 
@@ -405,7 +406,7 @@ body{
     .footer{
         display: flex;
         justify-content: flex-end;
-        height:5rem;
+        /* height:5rem; */
     }
 
     .compass {
@@ -456,7 +457,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
     
     .circle {
@@ -621,7 +622,7 @@ body{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
     
     .circle {
