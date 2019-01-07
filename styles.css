@@ -434,6 +434,14 @@ body{
 /*tablet landscape ================================================================================================================*/ 
 
 @media (max-width: 1024px) and (min-height: 768px) and (orientation: landscape){
+
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .header{
         display: flex;
         justify-content: flex-start;
@@ -443,11 +451,8 @@ body{
     .sun {
         width: 125px;
         height: 125px;
-        border-radius: 50%;
-        background-color: rebeccapurple;
         margin-left: 10rem;
         margin-top: 4rem;
-        box-shadow: 0px 0px 20px 10px rgba(241, 69, 69, 0.863);
     }
     
     .main{
@@ -481,7 +486,6 @@ body{
         margin: 0px;
         width: 175px;
         height: 175px;
-        background-color: red;
     }
 
     #card1{
@@ -542,24 +546,14 @@ body{
     
     .button {
         padding: 10px;
+        margin: 10px;
         text-align: center;
+        height: auto;
+        width: auto;
         border: none;
         font-size: 18px;
     }
-    
-    #about{
-        background: mediumseagreen;
-        border-radius: 5px 0 0 5px;
-    }
-    
-    #animals{
-        background: mediumslateblue;
-    }
-    
-    #plants{
-        background: mediumturquoise;
-        border-radius: 0 5px 5px 0;
-    }
+
     
     .footer{
         display: flex;
@@ -577,7 +571,6 @@ body{
         margin-right: 8rem;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
     }
     
     .input-group{
@@ -587,11 +580,8 @@ body{
     
     .submit-button{
         border: none;
-        background: lightgreen;
         width: 3vw;
         height: 3vw;
-        border-radius: 50%;
-        box-shadow: 0px 0px 20px 10px rgba(27, 235, 190, 0.863);
     }
 }
 
