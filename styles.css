@@ -639,18 +639,3 @@ body{
     
 }
 
-}
-
-.input-group{
-    display: flex;
-    justify-items: center;
-}
-
-.submit-button{
-    border: none;
-    background: #2d8acd;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 10px rgba(252, 3, 169, 0.85);
-}
