@@ -1,6 +1,6 @@
 # FrontEndProject_JimJasonKatie
 
-# Title... working on it!
+# Pithos
 
 * Description
 * Technologies
@@ -30,7 +30,7 @@ Georgia farms are located.
 
 # Authors
 - Katie Duane
-  - Contributions: CSS for mobile and tablet, colors and fonts, Javascript for Animal' and 'Plant' pages, modals, and displaying data about each plant/animal.
+  - Contributions: CSS for mobile and tablet, colors and fonts, Javascript for 'Animal' and 'Plant' pages, modals, and displaying data about each plant/animal.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
