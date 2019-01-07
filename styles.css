@@ -13,7 +13,7 @@ font-family: 'Eczar', serif; */
 body{
     margin: 0;
     background: linear-gradient(to bottom, #2d8acd, white);
-  }
+}
 
 .backdrop {
     width: 100vw;
