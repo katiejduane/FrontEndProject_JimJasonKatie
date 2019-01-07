@@ -280,18 +280,22 @@ body{
         height: 300px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-around;
+        align-content: space-around;
         flex-direction: row;
+        margin-top: 0;
     }
 
     .card {
-        margin: 2px;
+        /* margin: 2px; */
         width: 145px;
         height: 145px;
         background-color: red;
         transition: transform all 1s;
         border-radius: 5%;
+        margin-bottom: 0;
+        
+    
     }
 
     #card1 {
