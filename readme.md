@@ -30,13 +30,13 @@ Georgia farms are located.
 
 # Authors
 - Katie Duane
-  - Contributions: CSS for mobile, colors and fonts, Javascript for loading 'Animal' and 'Plant' pages, modals and displaying data about each plant/animal.
+  - Contributions: CSS for mobile and tablet, colors and fonts, Javascript for Animal' and 'Plant' pages, modals, and displaying data about each plant/animal.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
-  - Contributions: Final wireframe, CSS for tablet and desktop, animations, colors & fonts, image editing, Javascript for 'About' page.
+  - Contributions: Final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
-  - Contributions: Boilerplate HTML, CSS, Javascript for Google Maps API
+  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API.
   - [GitHub Profile](http://github.com/jimboowens)
