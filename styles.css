@@ -292,7 +292,7 @@ body{
         width: 145px;
         height: 145px;
         background-color: red;
-        transition: transform 1s;
+        transition: all 1.5s;
         border-radius: 5%;
         margin-bottom: 0px;
       
@@ -306,6 +306,8 @@ body{
 
     #card1:hover{
         transform: scale(1.8);
+        background:lightgoldenrodyellow url(images/pig-sm.png) bottom center no-repeat;
+        background-size: 65%;
     }
 
     #card2 {

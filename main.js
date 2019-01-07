@@ -243,11 +243,11 @@ $(plantButton).on('click', function () {
     $('#card1').css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
     $('#card1').css('background-size', '90%');
     $('#card2').css('background', 'lightgoldenrodyellow url(images/peach-sm.png) center center no-repeat');
-    $('#card2').css('background-size', '90%');
+    $('#card2').css('background-size', '80%');
     $('#card3').css('background', 'lightgoldenrodyellow url(images/honeybee-sm.png) center center no-repeat');
     $('#card3').css('background-size', '90%');
-    $('#card4').css('background', 'lightgoldenrodyellow url(images/collard-sm.png) center center no-repeat');
-    $('#card4').css('background-size', '90%');
+    $('#card4').css('background', 'lightgoldenrodyellow url(images/collards-sm.png) center center no-repeat');
+    $('#card4').css('background-size', '80%');
     farmData();
 });
 
