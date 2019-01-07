@@ -232,22 +232,35 @@ $(plantButton).on('click', function () {
     let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
-            <div class="card" id="card1"></div>
-            <div class="card" id="card2"></div>
-            <div class="card" id="card3"></div>
-            <div class="card" id="card4"></div>
+            <div class="card" id="card1">
+                <div class="card1-background"></div>
+                <div class="card1-image"></div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card2-background"></div>
+                <div class="card2-image"></div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card3-background"></div>
+                <div class="card3-image"></div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card4-background"></div>
+                <div class="card4-image"></div>
+            </div>
         </div>
     </div>`
     $(main).html(mainHTML)
     console.log("hi")
-    $('#card1').css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
-    $('#card1').css('background-size', '90%');
-    $('#card2').css('background', 'lightgoldenrodyellow url(images/peach-sm.png) center center no-repeat');
-    $('#card2').css('background-size', '80%');
-    $('#card3').css('background', 'lightgoldenrodyellow url(images/honeybee-sm.png) center center no-repeat');
-    $('#card3').css('background-size', '90%');
-    $('#card4').css('background', 'lightgoldenrodyellow url(images/collards-sm.png) center center no-repeat');
-    $('#card4').css('background-size', '80%');
+    $('.card1-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card1-image').css('background', 'url(images/blueberry-sm.png) center center no-repeat');
+    $('.card2-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card2-image').css('background', 'url(images/peach-sm.png) center center no-repeat');
+    $('.card3-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card3-image').css('background', 'url(images/honeybee-sm.png) center center no-repeat');
+    $('.card4-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card4-image').css('background', 'url(images/collards-sm.png) center center no-repeat');
+    $('.card>div').css('background-size', '80%');
     farmData();
 });
 
@@ -255,25 +268,38 @@ $(animalButton).on('click', function () {
     animals = true;
     plants = false;
     about = false;
-    let mainHTML = `
-    <div class="circle">
+    let mainHTML = 
+    `<div class="circle">
         <div class="card-wrapper">
-            <div class="card" id="card1"></div>
-            <div class="card" id="card2"></div>
-            <div class="card" id="card3"></div>
-            <div class="card" id="card4"></div>
+            <div class="card" id="card1">
+                <div class="card1-background"></div>
+                <div class="card1-image"></div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card2-background"></div>
+                <div class="card2-image"></div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card3-background"></div>
+                <div class="card3-image"></div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card4-background"></div>
+                <div class="card4-image"></div>
+            </div>
         </div>
     </div>`
     $(main).html(mainHTML)
     console.log("hi")
-    $('#card1').css('background', 'lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat');
-    $('#card1').css('background-size', '90%');
-    $('#card2').css('background', 'lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat');
-    $('#card2').css('background-size', '90%');
-    $('#card3').css('background', 'lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat');
-    $('#card3').css('background-size', '90%');
-    $('#card4').css('background', 'lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat');
-    $('#card4').css('background-size', '90%');
+    $('.card1-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card1-image').css('background', 'url(images/pig-sm.png) center center no-repeat');
+    $('.card2-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card2-image').css('background', 'url(images/bull-sm.png) center center no-repeat');
+    $('.card3-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card3-image').css('background', 'url(images/chicken-sm.png) center center no-repeat');
+    $('.card4-background').css('background-color', 'lightgoldenrodyellow');
+    $('.card4-image').css('background', 'url(images/goat-sm.png) center center no-repeat');
+    $('.card>div').css('background-size', '80%');
     farmData();
 });
 

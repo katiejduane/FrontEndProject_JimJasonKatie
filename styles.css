@@ -291,79 +291,52 @@ body{
     .card {
         width: 145px;
         height: 145px;
-        background-color: red;
-        transition: all 1.5s;
-        border-radius: 5%;
         margin-bottom: 0px;
-      
+        position: relative;
     }
 
-    #card1 {
-        background:lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat;
+    .card>div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 145px;
+        height: 145px;
+        border-radius: 5%;
         background-size: 90%;
+    }
+
+    .card>div{
+        transition: transform 1s;
+    }
+
+    .card1-background, .card1-image{
         transform-origin: bottom right;
     }
 
-    #card1:hover{
-        transform: scale(1.8);
-        background:lightgoldenrodyellow url(images/pig-sm.png) bottom center no-repeat;
-        background-size: 65%;
-    }
-
-    #card2 {
-        background: lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat;
-        background-size: 90%;
+    .card2-background, .card2-image{
         transform-origin: bottom left;
     }
 
-    #card2:hover{
-        transform: scale(1.8);
-    }
-
-    #card3 {
-        background: lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat;
-        background-size: 90%;
+    .card3-background, .card3-image{
         transform-origin: top right;
     }
 
-      #card3:hover{
-        transform: scale(1.8);
-    }
-
-    #card4 {
-        background:  lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat;
-        background-size: 90%;
+    .card4-background, .card4-image{
         transform-origin: top left;
     }
 
-    #card4:hover{
+    .card:hover>div:first-child{
         transform: scale(1.8);
     }
 
-
-    /* #card1.ease{
-        transition:  2s ease-in;
-    }
-
-    #card1.ease-out{
-        transition:  2s ease-out;
-    } */
-
-
-    .nav {
-        margin: 0px auto;
-        /* position: fixed; 
-        margin: 2rem;
-        bottom: 5px;
-        left: 3.5rem;
-         */
+    .card:hover>div:last-child{
+        transform: scale(1.5);
     }
 
     .button-wrapper {
         display: flex;
-        /* flex-direction: column; */
         padding: 10px;
-        margin: 1.5rem;
+        margin-top: 1.8rem;
     
     }
 
