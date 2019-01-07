@@ -171,19 +171,22 @@ body{
     height: 30px;
     text-align: center;
     border: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 #about{
-    background: #61b864;
+    background: #7bd4b2;
     border-radius: 5px 0 0 5px;
 }
 
 #animals{
-    background: #61b864;
+    background: #7bd4b2;
 }
 
 #plants{
-    background: #61b864;
+    background: #7bd4b2;
     border-radius: 0 5px 5px 0;
 }
 
@@ -287,99 +290,76 @@ body{
         width: 145px;
         height: 145px;
         background-color: red;
-        transition: transform  1s;
+        transition: transform all 1s;
+        border-radius: 5%;
     }
 
     #card1 {
         background:lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat;
         background-size: 90%;
-        border-radius: 5% 0 0 0;
+        transform-origin: bottom right;
+        transition: all 1s;
+    }
+
+    #card1:hover{
+        transform: scale(1.8);
     }
 
     #card2 {
         background: lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat;
         background-size: 90%;
-        border-radius: 0 5% 0 0;
+        transform-origin: bottom left;
+        transition: all 1s;
+    }
+
+    #card2:hover{
+        transform: scale(1.8);
     }
 
     #card3 {
         background: lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat;
         background-size: 90%;
-        border-radius: 0 0 0 5%;
+        transform-origin: top right;
+        transition: all 1s;
+    }
+
+      #card3:hover{
+        transform: scale(1.8);
     }
 
     #card4 {
         background:  lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat;
         background-size: 90%;
-        border-radius: 0 0 5% 0;
+        transform-origin: top left;
+        transition: all 1s;
     }
 
-    #card1:hover{
+    #card4:hover{
         transform: scale(1.8);
-        transform-origin: bottom right;
-       
-        /* background-image: linear-gradient(to bottom right, lightgoldenrodyellow, red); */
     }
 
-    #card1.ease{
+
+    /* #card1.ease{
         transition: all 2s ease-in;
     }
 
     #card1.ease-out{
         transition: all 2s ease-out;
-    }
+    } */
 
-    #card2:hover{
-        transform: scale(1.8);
-        transform-origin: bottom left;
-        /* border-radius: 10% 50% 10% 0; */
-    }
-
-    #card2.ease{
-        transition: all 2s ease-in;
-    }
-
-    #card2.ease-out{
-        transition: all 2s ease-out;
-    }
-
-    #card3:hover{
-        transform: scale(1.8);
-        transform-origin: top right;
-    }
-
-    #card3.ease{
-        transition: all 2s ease-in;
-    }
-
-    #card3.ease-out{
-        transition: all 2s ease-out;
-    }
-
-    #card4:hover{
-        transform: scale(1.8);
-        transform-origin: top left;
-    }
-
-    #card4.ease{
-        transition: all 2s ease-in;
-    }
-
-    #card4.ease-out{
-        transition: all 2s ease-out;
-    }
 
     .nav {
         margin: 0px auto;
-        /* position: fixed; */
-        /* margin: 3rem; */
-        /* top: 26rem;
-        left: 2rem; */
-        
+        /* position: fixed; 
+        margin: 2rem;
+        bottom: 5px;
+        left: 3.5rem;
+         */
     }
 
     .button-wrapper {
         display: flex;
+        /* flex-direction: column; */
         padding: 10px;
     
     }

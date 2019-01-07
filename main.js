@@ -206,7 +206,7 @@ plantData();
 $(plantButton).on('click', function () {
     plants = true;
     animals = false;
-    let mainHTML = `<section class="main">
+    let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
             <div class="card" id="card1"></div>
@@ -214,8 +214,7 @@ $(plantButton).on('click', function () {
             <div class="card" id="card3"></div>
             <div class="card" id="card4"></div>
         </div>
-    </div>
-        </section >`
+    </div>`
     $(main).html(mainHTML)
     console.log("hi")
     $('#card1').css('background', 'lightgoldenrodyellow url(images/blueberry-sm.png) center center no-repeat');
@@ -232,7 +231,7 @@ $(plantButton).on('click', function () {
 $(animalButton).on('click', function () {
     animals = true;
     plants = false;
-    let mainHTML = `<section class="main">
+    let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
             <div class="card" id="card1"></div>
@@ -240,8 +239,7 @@ $(animalButton).on('click', function () {
             <div class="card" id="card3"></div>
             <div class="card" id="card4"></div>
         </div>
-    </div>
-        </section >`
+    </div>`
     $(main).html(mainHTML)
     console.log("hi")
     $('#card1').css('background', 'lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat');
