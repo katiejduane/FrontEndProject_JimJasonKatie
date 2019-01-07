@@ -106,6 +106,25 @@ let critterInfo = [
     }
 ]
 
+let aboutInfo = [
+    {
+        name: "Katie",
+        meaning: "The name Kathryn is: pure, clear. From the Latin Katharina",
+    },
+    {
+        name: "Jason",
+        meaning: "The name Jason: healing. The name was borne in Greek mythology. Var: Jayson", 
+    },
+    {
+        name: "Jeremy",
+        meaning: "From the given name Jeremiah. The weeping prophet",
+    },
+    {
+        name: "Pithos",
+        meaning: "The Greek name for a container or vessel. A farm is a kind of container. So is a website",
+    }
+]
+
 //========================= *** farmData END! *** ==========================//
 
 
@@ -122,6 +141,7 @@ let main = document.querySelector('.main')
 //booleans for page START (they change when clicking the nav buttons!)
 let animals = true;
 let plants = false;
+let about = false;
 
 // so clicking thebackdrop closes the modal
 $('.backdrop').on('click', function () {
@@ -181,6 +201,22 @@ function farmData() {
                 })
             })
         }
+    } else if (about == true){
+        let modal1HTML = "";
+        let aboutCards = [card1, card2, card3, card4]
+        for (let i = 0; i < aboutInfo.length; i++) {
+            $(aboutCards[i]).on('click', function (){
+                modal1.style.display = 'flex';
+                backdrop.style.display = 'block';
+                modal1HTML = 
+                    `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
+                $(modal1).html(modal1HTML)
+                $('.orb-1').on('click', function(){
+                    modal1.style.display = 'none';
+                    backdrop.style.display = 'none';
+                })
+            })
+        }
     }
 }
 
@@ -192,6 +228,7 @@ farmData()
 $(plantButton).on('click', function () {
     plants = true;
     animals = false;
+    about = false;
     let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
@@ -217,6 +254,7 @@ $(plantButton).on('click', function () {
 $(animalButton).on('click', function () {
     animals = true;
     plants = false;
+    about = false;
     let mainHTML = `
     <div class="circle">
         <div class="card-wrapper">
@@ -240,9 +278,29 @@ $(animalButton).on('click', function () {
 });
 
 $(aboutButton).on('click', function () {
-
     animals = false;
     plants = false;
+    about = true;
+    let mainHTML = `
+     <div class="circle">
+        <div class="card-wrapper">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+        </div>
+    </div>`
+    $(main).html(mainHTML)
+    console.log("hi")
+    $('#card1').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card1').css('background-size', '90%');
+    $('#card2').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card2').css('background-size', '90%');
+    $('#card3').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card3').css('background-size', '90%');
+    $('#card4').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
+    $('#card4').css('background-size', '90%');
+    farmData();
 })
 
 
