@@ -13,7 +13,7 @@ font-family: 'Eczar', serif; */
 body{
     margin: 0;
     background: linear-gradient(to bottom, #2d8acd, white);
-  }
+}
 
 .backdrop {
     width: 100vw;
@@ -106,7 +106,6 @@ body{
     align-content: center;
     justify-content: center;
     width: 100%;
-    /* background: lightgreen; */
     margin: 8px;
 }
 
@@ -167,6 +166,8 @@ body{
 
 .button {
     padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
     width: 30%;
     height: 30px;
     text-align: center;
@@ -178,7 +179,6 @@ body{
 
 #about{
     background: #7bd4b2;
-    border-radius: 5px 0 0 5px;
 }
 
 #animals{
@@ -187,7 +187,6 @@ body{
 
 #plants{
     background: #7bd4b2;
-    border-radius: 0 5px 5px 0;
 }
 
 .compass {
@@ -407,6 +406,14 @@ body{
 /*tablet landscape ================================================================================================================*/ 
 
 @media (max-width: 1024px) and (min-height: 768px) and (orientation: landscape){
+
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .header{
         display: flex;
         justify-content: flex-start;
@@ -416,141 +423,75 @@ body{
     .sun {
         width: 125px;
         height: 125px;
-        border-radius: 50%;
-        background-color: rebeccapurple;
-        margin-left: 10rem;
-        margin-top: 4rem;
-        box-shadow: 0px 0px 20px 10px rgba(241, 69, 69, 0.863);
     }
     
     .main{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 0 auto;
+        margin: 6rem auto 2rem;
     }
     
     .circle {
-        clip-path: circle(150px at center);
-        width: 350px;
-        height: 350px;
+        clip-path: circle(225px at center);
+        width: 450px;
+        height: 450px;
         margin: 0 auto;
-        background-color: white;
+        background-color: rgb(60, 73, 150, 0.7);
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .card-wrapper {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+        margin-top: 0;
     }
     
     .card {
-        margin: 0px;
-        width: 175px;
-        height: 175px;
-        background-color: red;
-    }
-
-    #card1{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-
-    #card1 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card2{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-    
-    #card2 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card3{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    
-    #card3 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card4{
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    
-    #card4 > img{
-        width: 100px;
-        height: 100px;
+        margin: 2px;
+        width: 140px;
+        height: 140px;
     }
     
     .nav {
-        display: flex;
-        justify-content: center;
         margin: 0 auto;
+       
     }
     
     .button-wrapper {
+        margin: 5px auto;
         display: flex;
-        padding: 10px;
         align-content: center;
         justify-content: center;
     }
     
     .button {
-        padding: 10px;
-        text-align: center;
-        border: none;
-        font-size: 18px;
+        border-radius: 5px;
+        margin: 5px;
+        font-size: 16px;
     }
-    
-    #about{
-        background: mediumseagreen;
-        border-radius: 5px 0 0 5px;
-    }
-    
-    #animals{
-        background: mediumslateblue;
-    }
-    
-    #plants{
-        background: mediumturquoise;
-        border-radius: 0 5px 5px 0;
-    }
-    
+
     .footer{
         display: flex;
         justify-content: flex-end;
     }
     
     .compass {
-        display: flex;
-        background: lightgoldenrodyellow;
+        position: fixed;
+        bottom: 2rem;
+        right: 3rem;
         width: 5vw;
         height: 5vw;
-        border-radius: 50%;
+        min-width: 52px;
+        min-height: 52px;
         padding: 1rem;
-        align-self: flex-end;
-        margin-right: 8rem;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
+        margin: 2rem;
     }
     
     .input-group{
@@ -560,152 +501,114 @@ body{
     
     .submit-button{
         border: none;
-        background: lightgreen;
         width: 3vw;
         height: 3vw;
-        border-radius: 50%;
-        box-shadow: 0px 0px 20px 10px rgba(27, 235, 190, 0.863);
     }
 }
 
 /*tablet portrait=====================================================================================================================*/ 
 
 @media (min-width: 640px) and (max-width: 900px) and (orientation:portrait){
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
     .header{
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         margin: 0 auto;
     }
-
     .sun {
-        width: 16vw;
-        height: 16vw;
-        margin-top: 3rem;
-        margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
-        background-color: rebeccapurple;
-        box-shadow: 0px 0px 20px 10px rgba(241, 69, 69, 0.863);
+        background-color: rgb(240, 240, 158);
+        margin: 4rem auto 2rem;;
+        box-shadow: 0px 0px 60px 25px rgba(252, 3, 169, 0.85);
     }
-        
+
     .main{
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 0 auto;
+        margin: 3rem auto;
     }
     
     .circle {
-        clip-path: circle(150px at center);
-        width: 350px;
-        height: 350px;
+        clip-path: circle(225px at center);
+        width: 450px;
+        height: 450px;
         margin: 0 auto;
-        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: rgb(60, 73, 150, 0.7);
     }
     
     .card-wrapper {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+        margin-top: 2px;
     }
     
     .card {
-        margin: 0px;
-        width: 175px;
-        height: 175px;
-        background-color: red;
-    }
-
-    #card1{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-
-    #card1 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card2{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-    
-    #card2 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card3{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    
-    #card3 > img{
-        width: 100px;
-        height: 100px;
-    }
-
-    #card4{
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    
-    #card4 > img{
-        width: 100px;
-        height: 100px;
+        margin: 2px;
+        width: 140px;
+        height: 140px;
     }
     
     .nav {
-        display: flex;
-        justify-content: center;
+        margin: 0 auto;
+       
     }
     
     .button-wrapper {
+        margin: 5px auto;
         display: flex;
-        padding: 10px;
         align-content: center;
         justify-content: center;
     }
     
     .button {
-        padding: 15px;
-        text-align: center;
-        border: none;
-        font-size: 28px;
+        width: 100px;
+        border-radius: 5px;
+        margin: 5px;
+        font-size: 16px;
     }
 
     .footer{
         display: flex;
         justify-content: flex-end;
     }
-
+    
     .compass {
-        background: lightgoldenrodyellow;
-        width: 10vw;
-        height: 10vw;
+        display: flex;
+        background-color: rgba(250, 250, 210, 0.863);
+        box-shadow: 0px 0px 10px 5px rgba(250, 250, 210, 0.863);
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        margin: 0px;
-        margin-right: 50px;
-        margin-bottom: 30px;
-    }
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+}
     
     .submit-button{
         border: none;
-        background: lightgreen;
         height: 6vw;
         width: 6vw;
-        border-radius: 50%;
-        box-shadow: 0px 0px 20px 10px rgba(27, 235, 190, 0.863);
+
     }
     
 }
