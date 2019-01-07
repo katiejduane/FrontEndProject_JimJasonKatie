@@ -1,20 +1,4 @@
 $(document).ready(() => {
-    // console.log ("sanity check")
-
-    // const queryForm = document.querySelector('.google-query-form')
-    // let mapPic = ``
-    // console.log(queryForm)
-    $('.google-query-form').submit((event) => {
-        event.preventDefault()
-        // const symbol = encodeURI($('#symbol').val())
-        $('.compass').html(`
-            <iframe width="300px" height="300px" frameborder="0" style="border:0" 
-            src="https://www.google.com/maps/embed/v1/search?q=farms%20within%2015%20miles%20of%20my%20location&key=${apiKey}" 
-            allowfullscreen></iframe>
-        `)
-    })// end query form
-})//end ready form
-
 
 //=========================== *** farmData! *** ============================//
 
@@ -245,7 +229,21 @@ $(aboutButton).on('click', function () {
     plants = false;
 })
 
-
+let toggle =  `visible` // set variable to allow button to toggle map appearance
+function initMap() {
+    var gaMiddle = {lat: 32.838131, lng: -83.634705}
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
+    }
+$('.button').click((event) => {
+    event.preventDefault()
+    if (toggle === `visible`){
+        $('#map').css(`visibility`, toggle)
+        toggle = `hidden`
+    } else{
+        $('#map').css(`visibility`, toggle)
+        toggle = `visible`
+    }  
+})
 
 
 
@@ -350,3 +348,19 @@ $(aboutButton).on('click', function () {
 // let card2 = document.querySelector('#card2');
 // let card3 = document.querySelector('#card3');
 // let card4 = document.querySelector('#card4');
+
+    // console.log ("sanity check")
+
+    // const queryForm = document.querySelector('.google-query-form')
+    // let mapPic = ``
+    // console.log(queryForm)
+    // $('.map').submit((event) => {
+    //     event.preventDefault()
+    //     // const symbol = encodeURI($('#symbol').val())
+    //     $('.compass').html(`
+    //         <iframe width="300px" height="300px" frameborder="0" style="border:0" 
+    //         src="https://www.google.com/maps/embed/v1/search?q=farms%20within%2015%20miles%20of%20my%20location&key=${apiKey}" 
+    //         allowfullscreen></iframe>
+    //     `)
+    // })// end query form
+})//end ready form
