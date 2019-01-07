@@ -247,12 +247,11 @@ body{
         height: 10vw;
         min-width: 88px;
         min-height: 88px;
+        transition: box-shadow 10s;
     }
 
     .sun:hover{
         box-shadow: 0px 0px 1000px 800px rgba(241, 69, 69, 0.863);
-        transition: box-shadow 10s;
-
     }
 
     .main{
@@ -273,32 +272,33 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 50;
     }
 
     .card-wrapper {
+        margin-top: 0px;
         width: 300px;
         height: 300px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-around;
+        align-content: space-around;
         flex-direction: row;
     }
 
     .card {
-        margin: 2px;
         width: 145px;
         height: 145px;
         background-color: red;
-        transition: transform all 1s;
+        transition: transform 1s;
         border-radius: 5%;
+        margin-bottom: 0px;
     }
 
     #card1 {
         background:lightgoldenrodyellow url(images/pig-sm.png) center center no-repeat;
         background-size: 90%;
         transform-origin: bottom right;
-        transition: all 1s;
     }
 
     #card1:hover{
@@ -309,7 +309,6 @@ body{
         background: lightgoldenrodyellow url(images/bull-sm.png) center center no-repeat;
         background-size: 90%;
         transform-origin: bottom left;
-        transition: all 1s;
     }
 
     #card2:hover{
@@ -320,7 +319,6 @@ body{
         background: lightgoldenrodyellow url(images/chicken-sm.png) center center no-repeat;
         background-size: 90%;
         transform-origin: top right;
-        transition: all 1s;
     }
 
       #card3:hover{
@@ -331,7 +329,6 @@ body{
         background:  lightgoldenrodyellow url(images/goat-sm.png) center center no-repeat;
         background-size: 90%;
         transform-origin: top left;
-        transition: all 1s;
     }
 
     #card4:hover{
@@ -340,11 +337,11 @@ body{
 
 
     /* #card1.ease{
-        transition: all 2s ease-in;
+        transition:  2s ease-in;
     }
 
     #card1.ease-out{
-        transition: all 2s ease-out;
+        transition:  2s ease-out;
     } */
 
 
@@ -368,17 +365,18 @@ body{
         padding: 10px;
         margin: 2px;
         font-size: 14px;
-        transition: all 2s;
         width: 100px;
         height: auto;
         vertical-align: middle;
         border-radius: 5px;
-
+        z-index: 50;
     }
 
     #about, #plants, #animals {
+        background: #7bd4b2;
         border-radius:5px;
         outline: none;
+        transition: background-color 2s, box-shadow 2s;
     }
 
     #about:hover{
@@ -389,13 +387,11 @@ body{
     #animals:hover{
         background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
-        transition: all 2s;
     }
 
     #plants:hover{
         background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
-        transition: all 2s;
     }
 
     .footer{
@@ -421,11 +417,11 @@ body{
         height: 3vw;
         min-width: 31px;
         min-height: 31px;
+        transition: box-shadow 10s;
     }
 
     .submit-button:hover{
-        box-shadow: 0px 0px 200px 100px rgba(252, 3, 169, 0.85);;
-        transition: box-shadow 10s;
+        box-shadow: 0px 0px 1000px 800px rgba(24, 3, 252, 0.85);;
     }
 }
 
