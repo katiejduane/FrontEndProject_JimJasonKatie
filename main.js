@@ -114,10 +114,10 @@ let backdrop = document.querySelector('.backdrop');
 let cardButtons = document.querySelectorAll('.card');
 let modal1 = document.querySelector('.modal-1');
 let orb1 = document.querySelector('.orb-1');
-let card1 = document.querySelector('#card1');
-let card2 = document.querySelector('#card2');
-let card3 = document.querySelector('#card3');
-let card4 = document.querySelector('#card4');
+// let card1 = document.querySelector('#card1');
+// let card2 = document.querySelector('#card2');
+// let card3 = document.querySelector('#card3');
+// let card4 = document.querySelector('#card4');
 let animalButton = document.querySelector('#animals');
 let plantButton = document.querySelector('#plants');
 let aboutButton = document.querySelector('#about');
@@ -136,6 +136,10 @@ $('.backdrop').on('click', function () {
 // looping through the farmFata object
 function animalData() {
     let modal1HTML = "";
+    let card1 = document.querySelector('#card1');
+    let card2 = document.querySelector('#card2');
+    let card3 = document.querySelector('#card3');
+    let card4 = document.querySelector('#card4');
     let animalCards = [card1, card2, card3, card4];
     if (animals == true) {
         for (let i = 0; i < critterInfo.length; i++) {
@@ -161,9 +165,13 @@ function animalData() {
 animalData();
 
 //function call for plant and animal data!
-
+// i think i should be able to put this all in one function...?
 function plantData() {
     let modal1HTML = "";
+    let card1 = document.querySelector('#card1');
+    let card2 = document.querySelector('#card2');
+    let card3 = document.querySelector('#card3');
+    let card4 = document.querySelector('#card4');
     let plantCards = [card1, card2, card3, card4];
     if (plants == true) {
         console.log("plant")
@@ -171,7 +179,7 @@ function plantData() {
             console.log('plant2')
             $(plantCards[i]).on('click', function () {
                 console.log('boo')
-                modal1.style.display = 'block';
+                modal1.style.display = 'flex';
                 backdrop.style.display = 'block';
                 modal1HTML =
                     `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
@@ -194,7 +202,7 @@ plantData();
 
 
 // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
-//animal, plant and about button code!
+// COULD THIS ALL BE DONE IN A FOR LOOP? ONE FOR EACH BUTTON CLICK? (PLANT/ANIMAL)
 $(plantButton).on('click', function () {
     plants = true;
     animals = false;
