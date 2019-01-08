@@ -44,13 +44,13 @@ Georgia farms are located.
 
 # Authors
 - Katie Duane
-  - Contributions: Concepts, wireframes, CSS for mobile and tablet, colors and fonts, Javascript for 'Animal' and 'Plant' pages, modals, and displaying data about each plant/animal. Plant and animal research.
+  - Contributions: Concept, wireframes, CSS for mobile and tablet, colors and fonts, Javascript for 'Animal' and 'Plant' pages, modals, and displaying data about each plant/animal. Plant and animal research.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
-  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page.
+  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for openign page.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
-  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API. Animal and local farm research.
+  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API. Animal and local farm research, Javascript for Farm Search Object.
   - [GitHub Profile](http://github.com/jimboowens)

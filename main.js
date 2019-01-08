@@ -1,6 +1,6 @@
 // $(document).ready(() => {
 
-   
+
     // variables for HTML elements that need to be changed with JS
     let backdrop = document.querySelector('.backdrop');
     let cardButtons = document.querySelectorAll('.card');
@@ -21,91 +21,95 @@
         backdrop.style.display = 'none';
         modal1.style.display = 'none';
     })
+
+//keyframes animation function for backdrop and modal ... can we also change visibility to flex/block here?
+function fadeIn() {
+    modal1.style.display = 'flex';
+    backdrop.style.display = 'block';
+    modal1.classList.remove('fade-out-modal')
+    modal1.classList.add('fade-in-modal')
+    backdrop.classList.remove('fade-out-back')
+    backdrop.classList.add('fade-in-back')
+}
+
+//can this also turn off visibility and fadeout
+
+function fadeOut() {
+    modal1.classList.remove('fade-in-modal')
+    modal1.classList.add('fade-out-modal')
+    backdrop.classList.remove('fade-in-back')
+    backdrop.classList.add('fade-out-back')
+    modal1.style.display = 'none';
+    backdrop.style.display = 'none';
+}
     
     // /looping through both plant and animal objects!
     function farmData() {
-        let modal1HTML = "";
-        let card1 = document.querySelector('#card1');
-        let card2 = document.querySelector('#card2');
-        let card3 = document.querySelector('#card3');
-        let card4 = document.querySelector('#card4');
-        let animalCards = [card1, card2, card3, card4];
-        if (animals == true) {
-            for (let i = 0; i < critterInfo.length; i++) {
-                $(animalCards[i]).on('click', function () {
-                    modal1.classList.remove('fade-out-modal')
-                    modal1.classList.add('fade-in-modal')
-                    backdrop.classList.add('fade-in-back')
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1HTML =
-                        `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
-                <div class="facts1"> ${critterInfo[i].fact1}</div> <div class="facts2"> ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
-                    $(modal1).html(modal1HTML)
-                    $('.orb-1').on('click', function () {
-                        modal1HTML = `<div class="myths"> ${critterInfo[i].myth}</div> <div class="symbols">${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
+            let modal1HTML = "";
+            let card1 = document.querySelector('#card1');
+            let card2 = document.querySelector('#card2');
+            let card3 = document.querySelector('#card3');
+            let card4 = document.querySelector('#card4');
+            let animalCards = [card1, card2, card3, card4];
+            if (animals == true) {
+                for (let i = 0; i < critterInfo.length; i++) {
+                    $(animalCards[i]).on('click', function () {
+                        fadeIn()
+                        modal1HTML =
+                            `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
+                    <div class="facts1"> ${critterInfo[i].fact1}</div> <div class="facts2"> ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
                         $(modal1).html(modal1HTML)
                         $('.orb-1').on('click', function () {
-                            modal1.classList.remove('fade-in-modal')
-                            modal1.classList.add('fade-out-modal')
-                            modal1.style.display = 'none';
-                            backdrop.style.display = 'none';
+                            modal1HTML = `<div class="myths"> ${critterInfo[i].myth}</div> <div class="symbols">${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
+                            $(modal1).html(modal1HTML)
+                            $('.orb-1').on('click', function () {
+                                fadeOut()
+                            })
                         })
                     })
-                })
-            }
-        } else if (plants == true) {
-            let modal1HTML = "";
-            let plantCards = [card1, card2, card3, card4]
-            console.log("plant")
-            for (let i = 0; i < cropInfo.length; i++) {
-                console.log('plant2')
-                $(plantCards[i]).on('click', function () {
-                    console.log('boo')
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1.classList.remove('fade-out-modal')
-                    modal1.classList.add('fade-in-modal')
-                    backdrop.classList.add('fade-in-back')
-                    modal1HTML =
-                        `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
-                <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
-                    $(modal1).html(modal1HTML)
-                    $('.orb-1').on('click', function () {
-                        modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-                    <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
+                }
+            } else if (plants == true) {
+                let modal1HTML = "";
+                let plantCards = [card1, card2, card3, card4]
+                console.log("plant")
+                for (let i = 0; i < cropInfo.length; i++) {
+                    console.log('plant2')
+                    $(plantCards[i]).on('click', function () {
+                        fadeIn()
+                        modal1HTML =
+                            `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
+                    <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
                         $(modal1).html(modal1HTML)
                         $('.orb-1').on('click', function () {
-                            modal1.style.display = 'none';
-                            backdrop.style.display = 'none';
+                            modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
+                        <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
+                            $(modal1).html(modal1HTML)
+                            $('.orb-1').on('click', function () {
+                                fadeOut()
+                            })
                         })
                     })
-                })
-            }
-        } else if (about == true){
-            let modal1HTML = "";
-            let aboutCards = [card1, card2, card3, card4]
-            for (let i = 0; i < aboutInfo.length; i++) {
-                $(aboutCards[i]).on('click', function (){
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1.classList.remove('fade-out-modal')
-                    modal1.classList.add('fade-in-modal')
-                    backdrop.classList.add('fade-in-back')
-                    modal1HTML = 
-                        `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
-                    $(modal1).html(modal1HTML)
-                    $('.orb-1').on('click', function(){
-                        modal1.style.display = 'none';
-                        backdrop.style.display = 'none';
+                }
+            } else if (about == true){
+                let modal1HTML = "";
+                let aboutCards = [card1, card2, card3, card4]
+                for (let i = 0; i < aboutInfo.length; i++) {
+                    $(aboutCards[i]).on('click', function (){
+                        fadeIn()
+                        modal1HTML = 
+                            `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
+                        $(modal1).html(modal1HTML)
+                        $('.orb-1').on('click', function(){
+                            fadeOut()
+                        })
                     })
-                })
+                }
             }
         }
-    }
-
-
-farmData()
+    
+    
+    farmData()
+    
     
     // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
     // COULD THIS ALL BE DONE IN A FOR LOOP? ONE FOR EACH BUTTON CLICK? (PLANT/ANIMAL)
