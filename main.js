@@ -417,7 +417,7 @@ $(document).ready(() => {
         $('.card3-image').css('background', 'url(icons/jim-icon-vect.png) center center no-repeat');
         $('.card4-background').css('background-color', 'lightgoldenrodyellow');
         $('.card4-image').css('background', 'url(icons/pithos-icon-vect.png) center center no-repeat');
-        $('.card>div').css('background-size', '80%');
+        $('.card>div').css('background-size', '60%');
         farmData();
     })
     
