@@ -1,33 +1,33 @@
-$(document).ready(() => {
+// $(document).ready(() => {
 
-// Jim's stuff-->
+// // Jim's stuff-->
 
-    $('.button').click((event) => {
-        event.preventDefault()
-        if (toggle === `visible`){
-            $('#map').css(`visibility`, toggle)
-            toggle = `hidden`
-        } else{
-            $('#map').css(`visibility`, toggle)
-            toggle = `visible`
-        }  
-    })
+//     $('.button').click((event) => {
+//         event.preventDefault()
+//         if (toggle === `visible`){
+//             $('#map').css(`visibility`, toggle)
+//             toggle = `hidden`
+//         } else{
+//             $('#map').css(`visibility`, toggle)
+//             toggle = `visible`
+//         }  
+//     })
 
-})//end ready form
+// })//end ready form
 
-// More of Jim's stuff -->
-function initMap() {
-    var gaMiddle = {lat: 32.838131, lng: -83.634705}
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
-    map.setMapTypeId(`hybrid`)
-    var marker = new google.maps.Marker({
-        position: gaMiddle,
-        map:map,
-        icon: `./images/map_icon.png`,
-        animation: google.maps.Animation.BOUNCE
-    })
-    marker.setMap(map)
-}
+// // More of Jim's stuff -->
+// function initMap() {
+//     var gaMiddle = {lat: 32.838131, lng: -83.634705}
+//     var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
+//     map.setMapTypeId(`hybrid`)
+//     var marker = new google.maps.Marker({
+//         position: gaMiddle,
+//         map:map,
+//         icon: `./images/map_icon.png`,
+//         animation: google.maps.Animation.BOUNCE
+//     })
+//     marker.setMap(map)
+// }
 
 
     //=========================== *** farmData! *** ============================//
@@ -213,8 +213,9 @@ let orb1 = document.querySelector('.orb-1');
 let animalButton = document.querySelector('#animals');
 let plantButton = document.querySelector('#plants');
 let aboutButton = document.querySelector('#about');
-let main = document.querySelector('.main')
-let toggle = `hidden`
+let main = document.querySelector('.main');
+let toggle = `hidden`;
+
 //booleans for page START (they change when clicking the nav buttons!)
 let animals = true;
 let plants = false;
@@ -228,74 +229,71 @@ $('.backdrop').on('click', function () {
 
 // /looping through both plant and animal objects!
 function farmData() {
-        let modal1HTML = "";
-        let card1 = document.querySelector('#card1');
-        let card2 = document.querySelector('#card2');
-        let card3 = document.querySelector('#card3');
-        let card4 = document.querySelector('#card4');
-        let animalCards = [card1, card2, card3, card4];
-        if (animals == true) {
-            for (let i = 0; i < critterInfo.length; i++) {
-                $(animalCards[i]).on('click', function () {
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1HTML =
-                        `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
-                <div class="facts1"> ${critterInfo[i].fact1}</div> <div class="facts2"> ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
+    let modal1HTML = "";
+    let card1 = document.querySelector('#card1');
+    let card2 = document.querySelector('#card2');
+    let card3 = document.querySelector('#card3');
+    let card4 = document.querySelector('#card4');
+    let animalCards = [card1, card2, card3, card4];
+    if (animals == true) {
+        for (let i = 0; i < critterInfo.length; i++) {
+            $(animalCards[i]).on('click', function () {
+                modal1.style.display = 'flex';
+                backdrop.style.display = 'block';
+                modal1HTML =
+                    `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
+            <div class="facts1"> ${critterInfo[i].fact1}</div> <div class="facts2"> ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
+                $(modal1).html(modal1HTML)
+                $('.orb-1').on('click', function () {
+                    modal1HTML = `<div class="myths"> ${critterInfo[i].myth}</div> <div class="symbols">${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
                     $('.orb-1').on('click', function () {
-                        modal1HTML = `<div class="myths"> ${critterInfo[i].myth}</div> <div class="symbols">${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
-                        $(modal1).html(modal1HTML)
-                        $('.orb-1').on('click', function () {
-                            modal1.style.display = 'none';
-                            backdrop.style.display = 'none';
-                        })
-                    })
-                })
-            }
-        } else if (plants == true) {
-            let modal1HTML = "";
-            let plantCards = [card1, card2, card3, card4]
-            console.log("plant")
-            for (let i = 0; i < cropInfo.length; i++) {
-                console.log('plant2')
-                $(plantCards[i]).on('click', function () {
-                    console.log('boo')
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1HTML =
-                        `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
-                <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
-                    $(modal1).html(modal1HTML)
-                    $('.orb-1').on('click', function () {
-                        modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
-                    <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
-                        $(modal1).html(modal1HTML)
-                        $('.orb-1').on('click', function () {
-                            modal1.style.display = 'none';
-                            backdrop.style.display = 'none';
-                        })
-                    })
-                })
-            }
-        } else if (about == true){
-            let modal1HTML = "";
-            let aboutCards = [card1, card2, card3, card4]
-            for (let i = 0; i < aboutInfo.length; i++) {
-                $(aboutCards[i]).on('click', function (){
-                    modal1.style.display = 'flex';
-                    backdrop.style.display = 'block';
-                    modal1HTML = 
-                        `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
-                    $(modal1).html(modal1HTML)
-                    $('.orb-1').on('click', function(){
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
                 })
-            }
+            })
+        }
+    } else if (plants == true) {
+        let modal1HTML = "";
+        let plantCards = [card1, card2, card3, card4]
+        for (let i = 0; i < cropInfo.length; i++) {
+            $(plantCards[i]).on('click', function () {
+                modal1.style.display = 'flex';
+                backdrop.style.display = 'block';
+                modal1HTML =
+                    `<h3 class="name">${cropInfo[i].crop}</h3> <div class="latin"> ${cropInfo[i].latin}</div>  <div class="origin">${cropInfo[i].nativeTo}</div>
+            <div class="facts1"> ${cropInfo[i].historicalFact}</div> <div class="orb-1"></div>`
+                $(modal1).html(modal1HTML)
+                $('.orb-1').on('click', function () {
+                    modal1HTML = `<div class="facts2">${cropInfo[i].medicinal}</div>
+                <div class="myths"> ${cropInfo[i].myth}</div> <div class="orb-1"></div>`
+                    $(modal1).html(modal1HTML)
+                    $('.orb-1').on('click', function () {
+                        modal1.style.display = 'none';
+                        backdrop.style.display = 'none';
+                    })
+                })
+            })
+        }
+    } else if (about == true){
+        let modal1HTML = "";
+        let aboutCards = [card1, card2, card3, card4]
+        for (let i = 0; i < aboutInfo.length; i++) {
+            $(aboutCards[i]).on('click', function (){
+                modal1.style.display = 'flex';
+                backdrop.style.display = 'block';
+                modal1HTML = 
+                    `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
+                $(modal1).html(modal1HTML)
+                $('.orb-1').on('click', function(){
+                    modal1.style.display = 'none';
+                    backdrop.style.display = 'none';
+                })
+            })
         }
     }
+}
 
 
 farmData()
@@ -303,7 +301,7 @@ farmData()
 
 // button clicks for NAV (to change from animal to plant to about or whatever the user pleases)
 // COULD THIS ALL BE DONE IN A FOR LOOP? ONE FOR EACH BUTTON CLICK? (PLANT/ANIMAL)
-$('#plants').on('click', function () {
+$(plantButton).on('click', function () {
     plants = true;
     animals = false;
     about = false;
@@ -329,7 +327,6 @@ $('#plants').on('click', function () {
         </div>
     </div>`
     $(main).html(mainHTML)
-    console.log("hi")
     $('.card1-background').css('background-color', 'lightgoldenrodyellow');
     $('.card1-image').css('background', 'url(images/blueberry-sm.png) center center no-repeat');
     $('.card2-background').css('background-color', 'lightgoldenrodyellow');
@@ -338,7 +335,7 @@ $('#plants').on('click', function () {
     $('.card3-image').css('background', 'url(images/honeybee-sm.png) center center no-repeat');
     $('.card4-background').css('background-color', 'lightgoldenrodyellow');
     $('.card4-image').css('background', 'url(images/collards-sm.png) center center no-repeat');
-    $('.card>div').css('background-size', '80%');
+    $('.card>div').css('background-size', '90%');
     farmData();
 });
 
@@ -368,7 +365,6 @@ $(animalButton).on('click', function () {
         </div>
     </div>`
     $(main).html(mainHTML)
-    console.log("hi")
     $('.card1-background').css('background-color', 'lightgoldenrodyellow');
     $('.card1-image').css('background', 'url(images/pig-sm.png) center center no-repeat');
     $('.card2-background').css('background-color', 'lightgoldenrodyellow');
@@ -377,7 +373,7 @@ $(animalButton).on('click', function () {
     $('.card3-image').css('background', 'url(images/chicken-sm.png) center center no-repeat');
     $('.card4-background').css('background-color', 'lightgoldenrodyellow');
     $('.card4-image').css('background', 'url(images/goat-sm.png) center center no-repeat');
-    $('.card>div').css('background-size', '80%');
+    $('.card>div').css('background-size', '90%');
     farmData();
 });
 
@@ -395,7 +391,6 @@ $(aboutButton).on('click', function () {
         </div>
     </div>`
     $(main).html(mainHTML)
-    console.log("hi")
     $('#card1').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
     $('#card1').css('background-size', '90%');
     $('#card2').css('background', 'lightgoldenrodyellow url(images/animalSymbol-1-copy.png) center center no-repeat');
