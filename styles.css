@@ -9,6 +9,9 @@ font-family: 'IM Fell DW Pica', serif;
 font-family: 'IM Fell Great Primer', serif;
 font-family: 'Eczar', serif; */
 
+#map{
+    display: none;
+}
 
 body{
     margin: 0 auto;
@@ -341,8 +344,27 @@ body{
         transition: box-shadow 10s;
     }
 
+    .sun>button{
+        border: none;
+        outline: none;
+    }
+
+    #pithos-logo{
+        background: url(icons/pithos-icon-vect_color2.png) center center no-repeat;
+        background-size: 90%;
+        width: 100%;
+        height: 100%;
+        opacity: 0.0;
+        transition: opacity 4s;
+    }
+
     .sun:hover{
         box-shadow: 0px 0px 1000px 800px rgba(241, 69, 69, 0.863);
+    }
+
+    .sun:hover>#pithos-logo{
+        opacity: 1.0;
+        cursor: pointer;
     }
 
     .main{
@@ -363,6 +385,24 @@ body{
         justify-content: center;
         align-items: center;
         z-index: 50;
+    }
+
+    .intro-container{
+        display: flex;
+        width: 200px;
+        height: 400px;
+        justify-content: center;
+        align-content: space-around;
+        align-self: center;
+    }
+
+    .intro-text{
+        font-family: 'Eczar', serif;
+        font-size: 16px;
+        text-align: center;
+        background: -webkit-linear-gradient(#eee, #2d8acd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .card-wrapper {
@@ -396,7 +436,7 @@ body{
     }
 
     .card>div{
-        transition: transform 1s;
+        transition: transform .5s;
     }
 
     .card1-background, .card1-image{
@@ -420,7 +460,7 @@ body{
     }
 
     .card:hover>div:last-child{
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 
     .button-wrapper {
@@ -433,33 +473,39 @@ body{
         padding: 10px;
         margin: 2px;
         font-size: 14px;
+        color: rgb(60, 73, 150, 0.7);
         width: 100px;
         height: auto;
         vertical-align: middle;
         border-radius: 5px;
         z-index: 50;
+        cursor: pointer;
     }
 
     #about, #plants, #animals {
         background: #7bd4b2;
         border-radius:5px;
         outline: none;
-        transition: background-color 2s, box-shadow 2s;
+        transition: background-color 2s, box-shadow 2s, color 2s;
     }
 
     #about:hover{
         background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
+        color: rgba(241, 69, 69, 0.863);
     }
 
     #animals:hover{
         background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
+        color: rgb(240, 240, 158);
+        color: rgba(241, 69, 69, 0.863);
     }
 
     #plants:hover{
         background: rgb(240, 240, 158);
         box-shadow: 0px 0px 10px 2px rgba(42, 0, 121, 0.4);
+        color: rgba(241, 69, 69, 0.863);
     }
 
     .footer{
