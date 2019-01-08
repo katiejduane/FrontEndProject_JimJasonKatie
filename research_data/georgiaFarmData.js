@@ -50,7 +50,7 @@
             latin: "Latin: sus scrofa (domesticus) or sus indicus.",
             fact1: "Tattoo artists use their skin for practice and doctors use their organs for preclinical study.",
             fact2: "Pigs can return to a feral state in less than one generation; when left alone and uncared for, their hide regrows, teeth grow into tusks, and disposition becomes far less amenable.",
-            myth: "'Gullinbursti' was a pig in Norse Mythology made by two dwarves from a pig-skin and thousands of pieces of gold wire. He shone like the sun and could speed through the sky, making plants grow. He also used his tusks to rake the earth and show men how to plow the land.",
+            myth: "Pigs were holy in Irish and Germanic mythology. In Norse Mythology,'Gullinbursti' was a pig made by two dwarves using thousands of pieces of gold wire. He shone like the sun and could speed through the sky, making plants grow. He also used his tusks to rake the earth and show men how to plow the land.",
             symbolism: "In Yin and Yang, the pig is the yin; soft, cool, and yielding. In Asian cultures, they symbolize wealth. In Western cultures, they symbolize excess, laziness, awkwardness, and obesity.",
         
         },
@@ -90,18 +90,26 @@
         {
             name: "Katie",
             meaning: "The name Kathryn is: pure, clear. From the Latin Katharina",
+            origin: "Katie is originally from Western New York, but she has also lived in Seattle, Portland, Boston, and Guayaquil (Ecuador). She writes essays and poems, and also code for the web. ",
+            link: `<a href ="https://github.com/katiejduane" target="_blank">Github Profile</a>`
         },
         {
             name: "Jason",
-            meaning: "The name Jason: healing. The name was borne in Greek mythology. Var: Jayson", 
+            meaning: "The name Jason: healing. The name was borne in Greek mythology. Var: Jayson.", 
+            origin: "Jason is originally from Baltimore, Maryland. He has also lived in Chicago and San Francisco. He makes paintings, sculptures, mosaics, and now websites.",
+            link: `<a href ="https://github.com/jasonpbenson" target="_blank">Github Profile</a>`,
         },
         {
             name: "Jeremy",
-            meaning: "From the given name Jeremiah. The weeping prophet",
+            meaning: "From the given name Jeremiah. The weeping prophet.",
+            origin: "Jim is originally from Albany, Georgia, but raised in Rome (Georgia). He's super into math, has managed a few restaurants, and currently works as a web developer.",
+            link: `<a href ="https://github.com/jimboowens" target="_blank">Github Profile</a>`,
         },
         {
             name: "Pithos",
-            meaning: "The Greek name for a container or vessel. A farm is a kind of container. So is a website",
+            meaning: "The Greek name for a container or vessel. An ecoystsem, like our little farm, is a kind of container. So is a website",
+            origin: "We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, and mythology; which are their own kind of ecosystems, or containers. <i>Pithos</i>.",
+            link: "",
         }
     ]
 
@@ -129,7 +137,7 @@
         },
         {
             farmName: "Country Gardens and Farm Nursery",
-            blurb: "",
+            blurb: "Hey, Jim!! VICOTRY!!",
             latLong: "",        
         },
         {
