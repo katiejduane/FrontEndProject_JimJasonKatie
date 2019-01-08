@@ -113,66 +113,54 @@
         }
     ]
 
-    let farmInfo = [
-        
-        {   
-            farmName: "Aluma",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Tucker Farms",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Truly Living Well",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Concrete Jungle",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Country Gardens and Farm Nursery",
-            blurb: "Hey, Jim!! VICOTRY!!",
-            latLong: "",        
-        },
-        {
-            farmName: "HunterCattle Company",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "White Oak Pastures",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Heritage Farm",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Mountain Valley Farm",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Love is Love Farm at Gaia Gardens",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "Rise 'n Shine Organic Farm",
-            blurb: "",
-            latLong: "",        
-        },
-        {
-            farmName: "HoneyWood Farms",
-            blurb: "",
-            latLong: "",        
-        },  
-    ]
+let farmInfo = [
+
+    {
+        farmName: "Aluma",
+        blurb: "Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
+    },
+    {
+        farmName: "Tucker Farms Georgia",
+        blurb: "Tucker Farms is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
+    },
+    {
+        farmName: "Truly Living Well Farm",
+        blurb: "Truly Living Well is an urban farm providing natural and organic produce and farmer training to local Atlanta community. Programs for adults and youth.",
+    },
+    {
+        farmName: "DogHead Farms",
+        blurb: "Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
+    },
+    {
+        farmName: "Country Gardens and Farm Nursery",
+        blurb: "Country Gardens Farm is a multi-generational family farm, located in Coweta County, Georgia, which grows local farm fresh food. All of their products are grown without chemicals, antibiotics, or hormones.",
+    },
+    {
+        farmName: "Hunter Cattle Company",
+        blurb: "Hunter Cattle Company is a family owned business that raises free range, antibiotic-, hormone-, and steroid-free 100% Grassfed Beef and Pasture Raised Pork. This creates products providing great nutrition and incredible flavor.",
+    },
+    {
+        farmName: "White Oak Pastures",
+        blurb: "White Oak Pastures 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
+    },
+    {
+        farmName: "Heritage Farm Georgia",
+        blurb: "Heritage Farm is a pasture based, family farm located in Georgia, whose mission is to produce high quality, great tasting, nutritious foods and educate others on the importance of local, sustainable farms.",
+    },
+    {
+        farmName: "Mountain Valley Farm",
+        blurb: "Mountain Valley Farms are proud to offer Grass-Fed Beef wish no hormones, antibiotics, steroids, pesticides, or chemical fertilizers raised on pasture in a stress free environment & handled humanely throughout all life stages.",
+    },
+    {
+        farmName: "Love is Love Farm at Gaia Gardens",
+        blurb: "Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
+    },
+    {
+        farmName: "Rise 'N Shine Organic Farm",
+        blurb: "Rise ‘N Shine Farm has grown into one of the largest Community Supported Agriculture (CSA) farms in Georgia supplying a bounty of certified organic produce to Metro Atlanta and Northwest Georgia.",
+    },
+    {
+        farmName: "HoneyWood Farms",
+        blurb: "Honeywood Farms is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
+    },
+]
