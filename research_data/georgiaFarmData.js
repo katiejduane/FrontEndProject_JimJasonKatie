@@ -161,6 +161,6 @@ let farmInfo = [
     },
     {
         farmName: "HoneyWood Farms",
-        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms/a>` + " is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
+        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms</a>` + " is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
     },
 ]
