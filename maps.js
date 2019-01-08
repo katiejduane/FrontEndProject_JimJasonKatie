@@ -8,6 +8,7 @@ $('.backdrop').on('click', function () {
     backdrop.style.display = 'none';
     modal1.style.display = 'none';
     map.style.display = 'none';
+    toggle = 'hidden';
 })
 
 
