@@ -117,7 +117,7 @@ let farmInfo = [
 
     {
         farmName: "Aluma Farm",
-        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
+        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + ": Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
     },
     {
         farmName: "Tucker Farms",
@@ -129,7 +129,7 @@ let farmInfo = [
     },
     {
         farmName: "Doghead Farms",
-        blurb: `<a href ="https://www.concrete-jungle.org/programs/doghead-farm/" target="_blank">Doghead Farms</a>` + " Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
+        blurb: `<a href ="https://www.concrete-jungle.org/programs/doghead-farm/" target="_blank">Doghead Farms</a>` + ": Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
     },
     {
         farmName: "Country Gardens Farm",
@@ -141,7 +141,7 @@ let farmInfo = [
     },
     {
         farmName: "White Oak Pastures",
-        blurb: `<a href ="https://www.whiteoakpastures.com/" target="_blank">White Oak Pastures</a>` + " A 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
+        blurb: `<a href ="https://www.whiteoakpastures.com/" target="_blank">White Oak Pastures</a>` + " is a 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
     },
     {
         farmName: "Heritage Farm Georgia",
@@ -153,7 +153,7 @@ let farmInfo = [
     },
     {
         farmName: "Love is Love Farm at Gaia Gardens",
-        blurb: `<a href ="http://www.loveislovefarm.com/" target="_blank">Love is Love Farm at Gaia Gardens</a>` + " Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
+        blurb: `<a href ="http://www.loveislovefarm.com/" target="_blank">Love is Love Farm at Gaia Gardens</a>` + ": Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
     },
     {
         farmName: "Rise 'N Shine Organic Farm",
@@ -161,6 +161,6 @@ let farmInfo = [
     },
     {
         farmName: "HoneyWood Farms",
-        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms</a>` + " is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
+        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms</a>` + " is a diversified livestock and market garden operation that practices holistic sustainable farming practices rooted in deep ecological principals.",
     },
 ]
