@@ -52,5 +52,5 @@ Georgia farms are located.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
-  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API. Animal and local farm research, Javascript for Farm Search Object.
+  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability. Animal and local farm research, Javascript for Farm Search Object. Data organization.
   - [GitHub Profile](http://github.com/jimboowens)

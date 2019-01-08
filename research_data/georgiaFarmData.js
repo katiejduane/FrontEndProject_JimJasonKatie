@@ -80,7 +80,7 @@
             latin: "Latin: capra aegagrus hircus",
             fact1: "Goats are naturally curious, exploring anything new or unfamiliar in their surroundings. They are also agile and known for their ability to balance in precarious places; they frequently climb trees.",
             fact2: "Goats, similar to dogs, will look to a human for assistance when faced with a challenge that they'd previously been mastered, but was then modified.",
-            myth: "Popular Christian folk tradition in Europe associated Satan with imagery of goats. A common superstition in the Middle Ages was that goats whispered lewd sentences in the ears of the saints.",
+            myth: "Few other domestic animals have suffered as much sacrifical killing as the goat. Popular Christian folk tradition in Europe associated Satan with imagery of goats. A common superstition in the Middle Ages was that goats whispered lewd sentences in the ears of the saints.",
             symbolism: "The faun is a mythological half human–half goat creature appearing in Ancient Rome. They were a symbol of fertility, and were said to inspire fear in men traveling in lonely, remote, or wild places.",
         
         }
