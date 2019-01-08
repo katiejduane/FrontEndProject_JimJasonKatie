@@ -14,7 +14,7 @@
             crop: "Peaches",
             nativeTo: "Origin: Northwest China",
             latin: "Latin: Prunus persica",
-            historicalFact: "The name 'persica' refers to its widespread cultivation in Persia (modern-day Iran), from where it was transplanted to Europe.",
+            historicalFact: "The name 'persica' refers to its widespread cultivation in Persia (modern-day Iran), from where it was transplanted to Europe. One of the old meanings of Tao is 'peach'.",
             medicinal: "Peaches are a great source of zinc, which also has anti-aging properties. Either eaten or put on the skin, they've been shown to be a great natural moisturizer. Eating peaches also may decrease neurodegenerative risk of disorders, such as Alzheimer's disease.",
             myth: "In Chinese mythology, 'Peaches of Immoirtality' are consumed by people to make them importal. They also frequently appear as symbols of longevity in Chinese paintings, fables, and sculpture.",
             georgia: "Georgia ranks third, in the US, for peach production, but China wins for the world.",
@@ -90,19 +90,19 @@
         {
             name: "Katie",
             meaning: "The name Kathryn is: pure, clear. From the Latin Katharina",
-            origin: "Katie is originally from Western New York, but she has also lived in Seattle, Portland, Boston, and Guayaquil (Ecuador). She writes essays and poems, and also code for the web. ",
+            origin: "Katie Duane is originally from Western New York, but she has also lived in Seattle, Portland, Boston, and Guayaquil (Ecuador). She writes essays and poems, and also code for the web. ",
             link: `<a href ="https://github.com/katiejduane" target="_blank">Github Profile</a>`
         },
         {
             name: "Jason",
             meaning: "The name Jason: healing. The name was borne in Greek mythology. Var: Jayson.", 
-            origin: "Jason is originally from Baltimore, Maryland. He has also lived in Chicago and San Francisco. He makes paintings, sculptures, mosaics, and now websites.",
+            origin: "Jason Benson is originally from Baltimore, Maryland. He has also lived in Chicago and San Francisco. He makes paintings, sculptures, mosaics, and now websites.",
             link: `<a href ="https://github.com/jasonpbenson" target="_blank">Github Profile</a>`,
         },
         {
             name: "Jeremy",
             meaning: "From the given name Jeremiah. The weeping prophet.",
-            origin: "Jim is originally from Albany, Georgia, but raised in Rome (Georgia). He's super into math, has managed a few restaurants, and currently works as a web developer.",
+            origin: "Jim Owens is originally from Albany, Georgia, but raised in Rome (Georgia). He's super into math, has managed a few restaurants, and currently works as a web developer.",
             link: `<a href ="https://github.com/jimboowens" target="_blank">Github Profile</a>`,
         },
         {
@@ -116,51 +116,51 @@
 let farmInfo = [
 
     {
-        farmName: "Aluma",
-        blurb: "Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
+        farmName: "Aluma Farm",
+        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
     },
     {
-        farmName: "Tucker Farms Georgia",
-        blurb: "Tucker Farms is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
+        farmName: "Tucker Farms",
+        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
     },
     {
-        farmName: "Truly Living Well Farm",
-        blurb: "Truly Living Well is an urban farm providing natural and organic produce and farmer training to local Atlanta community. Programs for adults and youth.",
+        farmName: "Truly Living Well",
+        blurb: `<a href ="https://www.trulylivingwell.com/" target="_blank">Truly Living Well Farm</a>` + " is an urban farm providing natural and organic produce and farmer training to local Atlanta community. Programs for adults and youth.",
     },
     {
-        farmName: "DogHead Farms",
-        blurb: "Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
+        farmName: "Doghead Farms",
+        blurb: `<a href ="https://www.concrete-jungle.org/programs/doghead-farm/" target="_blank">Doghead Farms</a>` + " Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
     },
     {
-        farmName: "Country Gardens and Farm Nursery",
-        blurb: "Country Gardens Farm is a multi-generational family farm, located in Coweta County, Georgia, which grows local farm fresh food. All of their products are grown without chemicals, antibiotics, or hormones.",
+        farmName: "Country Gardens Farm",
+        blurb: `<a href ="http://countrygardensfarm.com/" target="_blank">Country Gardens Farm</a>` + " is a multi-generational family farm, located in Coweta County, Georgia, which grows local farm fresh food. All of their products are grown without chemicals, antibiotics, or hormones.",
     },
     {
         farmName: "Hunter Cattle Company",
-        blurb: "Hunter Cattle Company is a family owned business that raises free range, antibiotic-, hormone-, and steroid-free 100% Grassfed Beef and Pasture Raised Pork. This creates products providing great nutrition and incredible flavor.",
+        blurb: `<a href ="http://huntercattle.com/" target="_blank">Hunter Cattle</a>` + " (Bold but tender) is a family owned business that raises free range, antibiotic-, hormone-, and steroid-free 100% Grassfed Beef and Pasture Raised Pork. This creates products providing great nutrition and incredible flavor.",
     },
     {
         farmName: "White Oak Pastures",
-        blurb: "White Oak Pastures 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
+        blurb: `<a href ="https://www.whiteoakpastures.com/" target="_blank">White Oak Pastures</a>` + " A 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
     },
     {
         farmName: "Heritage Farm Georgia",
-        blurb: "Heritage Farm is a pasture based, family farm located in Georgia, whose mission is to produce high quality, great tasting, nutritious foods and educate others on the importance of local, sustainable farms.",
+        blurb: `<a href ="http://heritage-farm.net/" target="_blank">Heritage Farm</a>` + " is a pasture based, family farm located in Georgia, whose mission is to produce high quality, great tasting, nutritious foods and educate others on the importance of local, sustainable farms.",
     },
     {
         farmName: "Mountain Valley Farm",
-        blurb: "Mountain Valley Farms are proud to offer Grass-Fed Beef wish no hormones, antibiotics, steroids, pesticides, or chemical fertilizers raised on pasture in a stress free environment & handled humanely throughout all life stages.",
+        blurb: `<a href ="http://grassfedgeorgia.com/" target="_blank">Mountain Valley Farm</a>` + " is proud to offer Grass-Fed Beef wish no hormones, antibiotics, steroids, pesticides, or chemical fertilizers raised on pasture in a stress free environment & handled humanely throughout all life stages.",
     },
     {
         farmName: "Love is Love Farm at Gaia Gardens",
-        blurb: "Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
+        blurb: `<a href ="http://www.loveislovefarm.com/" target="_blank">Love is Love Farm at Gaia Gardens</a>` + " Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
     },
     {
         farmName: "Rise 'N Shine Organic Farm",
-        blurb: "Rise ‘N Shine Farm has grown into one of the largest Community Supported Agriculture (CSA) farms in Georgia supplying a bounty of certified organic produce to Metro Atlanta and Northwest Georgia.",
+        blurb: `<a href ="https://risenshineorganicfarm.com/" target="_blank">Rise-n-Shine Organic Farm</a>` + " has grown into one of the largest Community Supported Agriculture (CSA) farms in Georgia supplying a bounty of certified organic produce to Metro Atlanta and Northwest Georgia.",
     },
     {
         farmName: "HoneyWood Farms",
-        blurb: "Honeywood Farms is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
+        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms/a>` + " is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
     },
 ]
