@@ -240,6 +240,10 @@ function farmData() {
             $(animalCards[i]).on('click', function () {
                 modal1.style.display = 'flex';
                 backdrop.style.display = 'block';
+                // modal1.classList.add('modal-on')
+                // backdrop.classList.add('backdrop-on')
+                modal1.classList.add('fade-in-modal')
+                backdrop.classList.add('fade-in-back')
                 modal1HTML =
                     `<h3 class="name">${critterInfo[i].critter}</h3> <div class="latin"> ${critterInfo[i].latin}</div>
             <div class="facts1"> ${critterInfo[i].fact1}</div> <div class="facts2"> ${critterInfo[i].fact2}</div> <div class="orb-1"></div>`
@@ -248,6 +252,9 @@ function farmData() {
                     modal1HTML = `<div class="myths"> ${critterInfo[i].myth}</div> <div class="symbols">${critterInfo[i].symbolism}</div> <div class="orb-1"></div>`
                     $(modal1).html(modal1HTML)
                     $('.orb-1').on('click', function () {
+                        console.log('yesss')
+                        modal1.classList.remove('fade-in-modal');
+                        backdrop.classList.remove('fade-in-back');
                         modal1.style.display = 'none';
                         backdrop.style.display = 'none';
                     })
