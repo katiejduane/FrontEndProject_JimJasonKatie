@@ -48,7 +48,7 @@ Georgia farms are located.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
-  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for openign page.
+  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for opening page.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens

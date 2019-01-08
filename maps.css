@@ -2,5 +2,43 @@
 #map {
     height: 400px;  
     width: 400px; 
-    visibility:hidden; 
+    display: none; 
+    z-index: 200;
+    border-radius: 5px;
+    position: fixed !important;
+    top: 90%;
+    left: 90%;
    }
+
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #7bd4b2;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    opacity: 0.6;
+    display: none;
+    }
+
+.modal-1 {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 90vh;
+    background: lightgoldenrodyellow;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
