@@ -8,11 +8,15 @@ font-family: 'Abhaya Libre', serif;
 font-family: 'IM Fell DW Pica', serif;
 font-family: 'IM Fell Great Primer', serif;
 font-family: 'Eczar', serif; */
-
+html {
+    height: 100%;
+}
 
 body{
     margin: 0 auto;
     background: linear-gradient(to bottom, #2d8acd, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -120,7 +124,6 @@ body{
     display: none;
 }
 
-
 .modal-1 h3{
     text-align: center;
     font-family: 'IM Fell DW Pica', serif;
@@ -167,11 +170,42 @@ body{
     box-shadow: 0px 0px 60px 25px rgba(252, 3, 169, 0.85);
 }
 
+.sun>button{
+    border: none;
+    outline: none;
+}
+
+#pithos-logo{
+    background: url(icons/pithos-icon-vect_color2.png) center center no-repeat;
+    background-size: 80%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
 .main{
     display: flex;
     align-content: center;
     justify-content: center;
     /* margin: 8px; */
+}
+
+.intro-container{
+    display: flex;
+    width: 90vwpx;
+    justify-content: center;
+    align-content: space-around;
+    align-self: center;
+    margin: 10px;
+}
+
+.intro-text{
+    font-family: 'Eczar', serif;
+    font-size: 16px;
+    text-align: center;
+    background: -webkit-linear-gradient(#fc03a9, #2d8acd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card-wrapper {
@@ -252,6 +286,7 @@ body{
     font-family: 'Crimson Text', serif;
     font-size: 13px;
     font-weight: bold;
+    color: rgb(60, 73, 150, 0.7);
 }
 
 #about{
@@ -285,7 +320,11 @@ body{
 
 .submit-button{
     border: none;
-    background-color: #2d8acd;
+    background: #2d8acd;
+    background-image: url(images/compass.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -386,7 +425,7 @@ a:active {
         margin-top: 10vh;
         width: 500px;
         height: 500px;
-        background-color: rgb(60, 73, 150, 0.7);
+        background-color: rgb(60, 73, 150, 0.4);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -403,15 +442,10 @@ a:active {
     }
 
     .intro-text{
-        font-family: 'Eczar', serif;
         font-size: 16px;
-        text-align: center;
-        background: -webkit-linear-gradient(#eee, #2d8acd);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
-    .card-wrapper {
+    .card-wrapper{
         margin-top: 0px;
         width: 300px;
         height: 300px;
@@ -479,7 +513,6 @@ a:active {
         padding: 10px;
         margin: 2px;
         font-size: 14px;
-        color: rgb(60, 73, 150, 0.7);
         width: 100px;
         height: auto;
         vertical-align: middle;
@@ -515,9 +548,8 @@ a:active {
     }
 
     .footer{
-        display: flex;
-        justify-content: flex-end;
-        /* height:5rem; */
+        position: relative;
+        text-align: end;
     }
 
     .compass {
@@ -586,7 +618,7 @@ a:active {
         width: 450px;
         height: 450px;
         margin: 0 auto;
-        background-color: rgb(60, 73, 150, 0.7);
+        background-color: rgb(60, 73, 150, 0.4);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -690,7 +722,7 @@ a:active {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(60, 73, 150, 0.7);
+        background-color: rgb(60, 73, 150, 0.4);
     }
     
     .card-wrapper {

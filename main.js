@@ -147,13 +147,16 @@ function displayNone() {
         console.log("hi")
         $('.card1-background').css('background-color', 'lightgoldenrodyellow');
         $('.card1-image').css('background', 'url(images/blueberry-sm.png) center center no-repeat');
+        $('.card1-image').css('background-size', '70%');
         $('.card2-background').css('background-color', 'lightgoldenrodyellow');
         $('.card2-image').css('background', 'url(images/peach-sm.png) center center no-repeat');
+        $('.card2-image').css('background-size', '60%');
         $('.card3-background').css('background-color', 'lightgoldenrodyellow');
         $('.card3-image').css('background', 'url(images/honeybee-sm.png) center center no-repeat');
+        $('.card3-image').css('background-size', '70%');
         $('.card4-background').css('background-color', 'lightgoldenrodyellow');
         $('.card4-image').css('background', 'url(images/collards-sm.png) center center no-repeat');
-        $('.card>div').css('background-size', '80%');
+        $('.card4-image').css('background-size', '60%');
         farmData();
     });
     
@@ -186,13 +189,16 @@ function displayNone() {
         console.log("hi")
         $('.card1-background').css('background-color', 'lightgoldenrodyellow');
         $('.card1-image').css('background', 'url(images/pig-sm.png) center center no-repeat');
+        $('.card1-image').css('background-size', '70%');
         $('.card2-background').css('background-color', 'lightgoldenrodyellow');
         $('.card2-image').css('background', 'url(images/bull-sm.png) center center no-repeat');
+        $('.card2-image').css('background-size', '80%');
         $('.card3-background').css('background-color', 'lightgoldenrodyellow');
         $('.card3-image').css('background', 'url(images/chicken-sm.png) center center no-repeat');
+        $('.card3-image').css('background-size', '60%');
         $('.card4-background').css('background-color', 'lightgoldenrodyellow');
         $('.card4-image').css('background', 'url(images/goat-sm.png) center center no-repeat');
-        $('.card>div').css('background-size', '80%');
+        $('.card4-image').css('background-size', '65%');
         farmData();
     });
     
@@ -226,13 +232,16 @@ $(aboutButton).on('click', function () {
         console.log("hi")
         $('.card1-background').css('background-color', 'lightgoldenrodyellow');
         $('.card1-image').css('background', 'url(icons/katie-icon-vect.png) center center no-repeat');
+        $('.card1-image').css('background-size', '70%');
         $('.card2-background').css('background-color', 'lightgoldenrodyellow');
         $('.card2-image').css('background', 'url(icons/jason-icon-vect.png) center center no-repeat');
+        $('.card2-image').css('background-size', '75%');
         $('.card3-background').css('background-color', 'lightgoldenrodyellow');
         $('.card3-image').css('background', 'url(icons/jim-icon-vect.png) center center no-repeat');
+        $('.card3-image').css('background-size', '65%');
         $('.card4-background').css('background-color', 'lightgoldenrodyellow');
         $('.card4-image').css('background', 'url(icons/pithos-icon-vect.png) center center no-repeat');
-        $('.card>div').css('background-size', '60%');
+        $('.card4-image').css('background-size', '75%');
         farmData();
 })
     
