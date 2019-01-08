@@ -32,7 +32,7 @@ body{
 	animation-name: fadeOutOpacityModal;
 	animation-iteration-count: 1;
 	animation-timing-function: ease;
-	animation-duration: 1s;
+	animation-duration: 2s;
 }
 
 .fade-in-modal {
