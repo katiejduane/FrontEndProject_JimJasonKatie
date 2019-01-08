@@ -238,7 +238,6 @@ body{
     height: 100%;
     border-radius: 5%;
     background-size: 90%;
-
 }
 
 #card1 {
@@ -399,7 +398,6 @@ a:active {
         background-size: 90%;
         width: 100%;
         height: 100%;
-        opacity: 0.0;
         transition: opacity 4s;
     }
 
@@ -425,7 +423,7 @@ a:active {
         margin-top: 10vh;
         width: 500px;
         height: 500px;
-        background-color: rgb(60, 73, 150, 0.4);
+        background-color: rgb(60, 73, 150, 0.7);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -439,10 +437,14 @@ a:active {
         justify-content: center;
         align-content: space-around;
         align-self: center;
+        padding: 12px;
     }
 
     .intro-text{
-        font-size: 16px;
+        font-size: 15px;
+        background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .card-wrapper{
@@ -472,7 +474,6 @@ a:active {
         height: 145px;
         border-radius: 5%;
         background-size: 90%;
-
     }
 
     .card>div{
@@ -573,7 +574,7 @@ a:active {
     }
 
     .submit-button:hover{
-        box-shadow: 0px 0px 1000px 800px rgba(24, 3, 252, 0.85);;
+        box-shadow: 0px 0px 1000px 800px rgba(24, 3, 252, 0.85);
     }
 }
 
@@ -618,15 +619,42 @@ a:active {
         width: 450px;
         height: 450px;
         margin: 0 auto;
-        background-color: rgb(60, 73, 150, 0.4);
+        background-color: rgb(60, 73, 150, 0.7);
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .intro-text{
+        font-size: 16px;
+        background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-wrapper {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-top: 2px;
+    }
+    
+    .card {
+        margin: 2px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .card>div{
+        width: 140px;
+        height: 140px;
+    }
     
     .nav {
         margin: 0 auto;
-       
     }
     
     .button-wrapper {
@@ -722,7 +750,26 @@ a:active {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(60, 73, 150, 0.4);
+        background-color: rgb(60, 73, 150, 0.7);
+    }
+
+    .intro-container{
+        display: flex;
+        width: 200px;
+        height: 400px;
+        justify-content: center;
+        align-content: space-around;
+        align-self: center;
+        padding: 12px;
+    }
+
+    .intro-text{
+        font-family: 'Eczar', serif;
+        font-size: 15px;
+        text-align: center;
+        background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     .card-wrapper {
