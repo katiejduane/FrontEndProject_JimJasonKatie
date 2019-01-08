@@ -44,7 +44,7 @@ Georgia farms are located.
 
 # Authors
 - Katie Duane
-  - Contributions: Wreframes, CSS for mobile and tablet, colors and fonts, Javascript for 'Animal' and 'Plant' pages, modals, and displaying data about each plant/animal. Plant and animal research.
+  - Contributions: Wireframes, CSS for mobile and tablet, colors and fonts, Javascript for 'Animal' and 'Plant' pages, modals, and displaying data about each plant/animal. Plant and animal research.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
