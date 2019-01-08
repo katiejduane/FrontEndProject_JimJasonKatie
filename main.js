@@ -101,7 +101,8 @@ function displayNone() {
                     $(aboutCards[i]).on('click', function (){
                         fadeIn()
                         modal1HTML = 
-                            `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> <div class="orb-1"></div>`
+                            `<h3 class="name">${aboutInfo[i].name}</h3> <div class="meaning">${aboutInfo[i].meaning}</div> 
+                            <div class="origin">${aboutInfo[i].origin}</div> <div class="profile-link">${aboutInfo[i].link} <div class="orb-1"></div>`
                         $(modal1).html(modal1HTML)
                         $('.orb-1').on('click', function(){
                             fadeOut()
