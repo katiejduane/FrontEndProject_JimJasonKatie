@@ -39,6 +39,10 @@ function fadeOut() {
     modal1.classList.add('fade-out-modal')
     backdrop.classList.remove('fade-in-back')
     backdrop.classList.add('fade-out-back')
+    setTimeout(displayNone, 2000)
+}
+
+function displayNone() {
     modal1.style.display = 'none';
     backdrop.style.display = 'none';
 }

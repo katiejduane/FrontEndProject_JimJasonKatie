@@ -29,7 +29,7 @@ body{
 
 .fade-out-back {
 	opacity: 0;
-	animation-name: fadeOutOpacityModal;
+	animation-name: fadeOutOpacityBack;
 	animation-iteration-count: 1;
 	animation-timing-function: ease;
 	animation-duration: 2s;
@@ -45,10 +45,10 @@ body{
 
 .fade-out-modal {
     opacity: 0;
-	animation-name: fadeOutOpacity;
+	animation-name: fadeOutOpacityModal;
 	animation-iteration-count: 1;
 	animation-timing-function: ease;
-	animation-duration: 1s;
+	animation-duration: 2s;
 }
 
 @keyframes fadeInOpacityModal {
@@ -64,30 +64,30 @@ body{
 	0% {
 		opacity: 0;
 	}
-	70% {
+	60% {
 		opacity: 0.6;
 	}
 }
-/* 
+
 @keyframes fadeOutOpacityModal {
-    100% {
+    0% {
 		opacity: 1;
-    }
-    
-	0% {
+	}
+	100% {
 		opacity: 0;
 	}
 }
 
-@keyframes fadeOutOpacityBackl {
-    100% {
+
+@keyframes fadeOutOpacityBack {
+    0% {
 		opacity: 0.6;
     }
     
-	0% {
+	100% {
 		opacity: 0;
     }
-} */
+}
 
 .backdrop {
     width: 100vw;
