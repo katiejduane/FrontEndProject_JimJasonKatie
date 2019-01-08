@@ -47,34 +47,33 @@ farmInfo.forEach(element => {
     })
 
 })
+let windowArr = []
+function closeOpenWindows(){
+    windowArr.forEach(element=>{
+        element.setMap(null)
+    })
+}
+
 function initMap() {
     var gaMiddle = {lat: 32.838131, lng: -83.634705}
     // const gaMiddle = google.maps.LatLng(32.838131, -83.634705)
     var map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: gaMiddle})
     map.setMapTypeId(`terrain`)
-    let infowindow;
     farmInfo.forEach(element => {
         let marker = new google.maps.Marker({
             position: element.latLong,
             map:map,
             icon: `./images/map_icon.png`,
-            animation: google.maps.Animation.BOUNCE
-        });
-        setTimeout(()=>{
-            marker = new google.maps.Marker({
-                position: element.latLong,
-                map: map,
-                icon: `./images/map_icon.png`,
-            });
-        },3000)
-        infowindow = new google.maps.InfoWindow({
+            animation: google.maps.Animation.DROP
+        })
+        let infoWindow = new google.maps.InfoWindow({
             content: element.blurb
-        });    
+        }) 
         marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
-        
+            closeOpenWindows()
+            infoWindow.open(map, marker)
+        })
         marker.setMap(map)
+        windowArr.push(infoWindow)
     })
 }
-
