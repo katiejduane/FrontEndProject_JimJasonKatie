@@ -238,6 +238,8 @@
             if (animals == true) {
                 for (let i = 0; i < critterInfo.length; i++) {
                     $(animalCards[i]).on('click', function () {
+                        modal1.classList.add('fade-in-modal')
+                        backdrop.classList.add('fade-in-back')
                         modal1.style.display = 'flex';
                         backdrop.style.display = 'block';
                         modal1HTML =
