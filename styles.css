@@ -9,9 +9,6 @@ font-family: 'IM Fell DW Pica', serif;
 font-family: 'IM Fell Great Primer', serif;
 font-family: 'Eczar', serif; */
 
-#map{
-    display: none;
-}
 
 body{
     margin: 0 auto;
@@ -294,10 +291,6 @@ body{
     width: 50px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 10px rgba(252, 3, 169, 0.85);
-}
-
-#map {
-    display: none;
 }
 
 /* DESKTOP! ========================================================================================================================== */
