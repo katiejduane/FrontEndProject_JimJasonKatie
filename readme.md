@@ -10,7 +10,7 @@
 * Authors
 
 # Description
-We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology and health; which are their own kinds of ecosystems, or containers. <i>Pithos</i>.
+We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers. <i>Pithos</i>.
 
 # Technologies
 - HTML
@@ -32,7 +32,7 @@ We wanted to create a space that would allow the user to experience an 'ordinary
     - Solution: TBA
 
 # MVP
-A front-end-only website that is informative and aesthetically pleasing that allows the user to learn about some of the history and
+A front-end-only website that is informative and aesthetically pleasing . It enables the user to learn about some of the history and
 mythology around plants and animals commonly farmed in Georgia. The user can also click on a map to see where various
 Georgia farms are located. 
 - A graphic display that corresponds to written info
