@@ -20,7 +20,16 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 - Open Weather Map API (WIP)
 
 # Challenges & Solutions
-Coming soon...
+- Challenge: the map loaded rather erratically ON the page, especially on different devices or when the screen was resized.
+    - Solution: We wrote JS to detect window size and anchor the map to either the circle or the compass so it was always visible to the user.
+- Challenge: the design was heavily oriented to the horizontal. 
+    - Solution: Several edits and re-designs had to be implemented for mobile and tablet-portrait.
+- Challenge: Animating the images within the circle made them so large they were clipped by the edge of the circle.
+    - Solution: Created separate <div> elements for the background color and the image, and animated them at different rates and to a different target size.
+- Challenge: We didn't initially write the CSS mobile-first, so we had a lot of refactoring to do anytime we redesigned something.
+    - Solution: Next time, we'll start mobile-first!
+- Challenge: Sometimes the bunnies do not load, rendering the map empty and unusable for the user.
+    - Solution: TBA
 
 # MVP
 A front-end-only website that is informative and aesthetically pleasing that allows the user to learn about some of the history and
@@ -49,7 +58,7 @@ Georgia farms are located.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
-  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for opening page, Pithos logo, ptihos research.
+  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for opening page, Pithos logo, Pithos research.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
