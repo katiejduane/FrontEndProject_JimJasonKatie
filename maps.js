@@ -24,17 +24,15 @@ $('.submit-button').click((event) => {
     }
     let windowWidth = window.innerWidth;
     const mapEdge = $('.circle').offset()
+    const mobileMapEdge = $('.compass').offset();
     if (windowWidth > 1024) {
         $('#map').offset({ top: mapEdge.top + 50, left: mapEdge.left + 50 });
-        console.log(windowWidth)
     } else if (windowWidth <= 1024 && windowWidth >= 768) {
-        console.log(windowWidth)
         $('#map').offset({ top: mapEdge.top + 25, left: mapEdge.left + 25});
     } else if (windowWidth <= 768) {
-        console.log(windowWidth)
-        $('map').css('width',  '350px');
-        $('map').css('height', '350px');
-        $('#map').offset({ top: mapEdge.top, left: mapEdge.left});
+        $('#map').css('width',  '350px');
+        $('#map').css('height', '350px');
+        $('#map').offset({ bottom: mobileMapEdge.top, left: mobileMapEdge.left - 125});
     }
 
 
