@@ -192,17 +192,30 @@ body{
 
 .intro-container{
     display: flex;
-    width: 90vwpx;
+    width: 90vw;
     justify-content: center;
-    align-content: space-around;
+    align-content: center;
     align-self: center;
+    flex-direction: column;
     margin: 10px;
+}
+
+.intro-logo{
+    width: 100px;
+    height: 80px;
+    background: url(images/pithos-logo-1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    align-self: center;
 }
 
 .intro-text{
     font-family: 'Eczar', serif;
     font-size: 16px;
     text-align: center;
+    margin-top: 0;
     background: -webkit-linear-gradient(#fc03a9, #2d8acd);
     background-clip: text;
     -webkit-background-clip: text;
@@ -267,7 +280,6 @@ body{
 .button-wrapper {
     display: flex;
     width: 90%;
-    /* padding: 10px; */
     align-content: center;
     justify-content: center;
 }
@@ -285,9 +297,10 @@ body{
     font-weight: bold;
     color: rgb(60, 73, 150, 0.7);
     outline: none;
-}
-
-#about{
+    border: none;
+    background: #7bd4b2;
+=
+/* #about{
     background: #7bd4b2;
 }
 
@@ -297,7 +310,7 @@ body{
 
 #plants{
     background: #7bd4b2;
-}
+} */
 
 .compass {
     display: flex;
@@ -327,6 +340,8 @@ body{
     width: 50px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 10px rgba(252, 3, 169, 0.85);
+    outline: none;
+    border: none;
 }
 
 a {
@@ -431,17 +446,28 @@ a:active {
 
     .intro-container{
         display: flex;
-        width: 200px;
-        height: 400px;
+        width: 400px;
+        height: 300px;
         justify-content: center;
         align-content: space-around;
         align-self: center;
         padding: 12px;
     }
 
+    .intro-logo{
+        width: 100px;
+        height: 80px;
+        background: url(images/pithos-logo-1.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-self: center;
+    }
+
     .intro-text{
         font-size: 15px;
         background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -627,6 +653,7 @@ a:active {
     .intro-text{
         font-size: 16px;
         background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -764,7 +791,7 @@ a:active {
 
     .intro-text{
         font-family: 'Eczar', serif;
-        font-size: 15px;
+        font-size: 14px;
         text-align: center;
         background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
         -webkit-background-clip: text;
@@ -804,6 +831,8 @@ a:active {
         border-radius: 5px;
         margin: 5px;
         font-size: 16px;
+        outline: none;
+        border: none;
     }
 
     .footer{
