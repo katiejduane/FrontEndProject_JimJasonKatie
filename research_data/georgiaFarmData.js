@@ -5,8 +5,8 @@
             nativeTo: "Origin: North America,",
             latin: "Latin: Vaccinium corymbosum",
             historicalFact: "Blueberries are one of only three berries native to North America. The continent’s earliest inhabitants were first to use the tiny berries, both fresh and dried, for their flavor, nutrition, and healing qualities.",
-            medicinal: "Blueberries have the highest antioxidant capacity of all the popular fruits and vegetables. Research suggests that the antioxidants in blueberries may inhibit tumor growth, decrease inflammation in the body, and help ward off certain cancers. ",
-            myth: "Native North Americans believed the Wild Blueberry had magical powers. Atop each Wild Blueberry is the base of its earlier flower, a calyx in the shape of a five-pointed star. Legend has it that during a time of starvation, the Great Spirit sent these “star berries” down from the heavens to relieve the hunger of his children.",
+            medicinal: "Blueberries have the highest antioxidant capacity of all the popular fruits and vegetables. ",
+            myth: "Native North Americans believed the Wild Blueberry had magical powers. Atop each berry is the base of its earlier flower, a calyx in the shape of a five-pointed star. Legend has it that during a time of starvation, the Great Spirit sent these “star berries” down from the heavens to relieve the hunger of his children.",
             georgia: "The blueberry industry is concentrated in the flatwoods of southeast Georgia. In 2014, Georgia produced more bueberries than any other state."
         },
 
@@ -15,8 +15,8 @@
             nativeTo: "Origin: Northwest China",
             latin: "Latin: Prunus persica",
             historicalFact: "The name 'persica' refers to its widespread cultivation in Persia (modern-day Iran), from where it was transplanted to Europe. One of the old meanings of Tao is 'peach'.",
-            medicinal: "Peaches are a great source of zinc, which also has anti-aging properties. Either eaten or put on the skin, they've been shown to be a great natural moisturizer. Eating peaches also may decrease neurodegenerative risk of disorders, such as Alzheimer's disease.",
-            myth: "In Chinese mythology, 'Peaches of Immoirtality' are consumed by people to make them importal. They also frequently appear as symbols of longevity in Chinese paintings, fables, and sculpture.",
+            medicinal: "Peaches are a great source of zinc, which also has anti-aging properties. Eating peaches also may decrease neurodegenerative risk of disorders, such as Alzheimer's disease.",
+            myth: "In Chinese mythology, the 'Peaches of Immortality' are consumed by people to make them importal. The peach was also a standard symbol of female genitalia and was connected with Taoist sexual mysticism.",
             georgia: "Georgia ranks third, in the US, for peach production, but China wins for the world.",
 
         },
@@ -26,7 +26,7 @@
             nativeTo: "Origin: Anywhere that has flowers or trees",
             latin: "Latin: apis mellifera (though, that's the honey bee)",
             historicalFact: "Humans have been cultivating honey since ancient times. A cave painting of a honey-seeker in Valencia Spain dates back 8,000 years.",
-            medicinal: "Honey can be used to treat mild burns, chronic and acute coughs, and can also be useful for controlling the side effects of radiation and chemotherapy. Its antibiotic properites are currently being researched.",
+            medicinal: "Honey can be used to treat mild burns, chronic and acute coughs, and can also be useful for controlling the side effects of radiation and chemotherapy.",
             myth: "In Greek mythology, bees were considered messengers of the gods and honey to be a source of wisdom and poetry. The gods of Olympus lived on honey (nectar) and honey wine (ambrosia). In Greek, the word 'nectar' means 'victory over death'. ",
             georgia: "Decatur is Georgia's first officially 'Bee-Friendly city. Georgia also has a State Prison Beekeeping Program. Types of honey commonly sold in Georgia are Orange Blossom, Sourwood, Tupelo, Tulip Poplar, Clover, Gallberry, and Wildflower Honey."
         },
@@ -70,7 +70,7 @@
             latin: "Latin: gallus gallus (domesticus)",
             fact1: "The humble chicken is arguably the closest living relative to the Tyrannosaurus Rex.",
             fact2: "While Chickens have been domesticated for 5,000 years, they descended fom the Red Junglefowl in southeast Asia. The male Junglefowl's tail is composed of long, arching feathers that initially look black, but shimmer with blue, purple, and green in bright light.",
-            myth: "They are used in some (predominantly Voodoo or Voodoo derivatives) religions for ritual sacrifice. Fortune-tellers have also read their entrails for milennia. They were the sacred bird of the Goddess Athena, the Goddess of wisdom and warfare.",
+            myth: "They are used in some (predominantly Voodoo) religions for ritual sacrifice. Fortune-tellers have also read their entrails for milennia. They were the sacred bird of the Goddess Athena.",
             symbolism: "In Roman times, chickens were related to the Sun God, and their clucking was related to Eros. They were also symbolic of commerce and productivity. The chicken figures as a symbol of parental and spiritual love in the literature of the West. ",
 
         },
@@ -79,9 +79,9 @@
             critter: "Goat",
             latin: "Latin: capra aegagrus hircus",
             fact1: "Goats are naturally curious, exploring anything new or unfamiliar in their surroundings. They are also agile and known for their ability to balance in precarious places; they frequently climb trees.",
-            fact2: "Goats, similar to dogs, will look to a human for assistance when faced with a challenge that they'd previously been mastered, but was then modified.",
-            myth: "Popular Christian folk tradition in Europe associated Satan with imagery of goats. A common superstition in the Middle Ages was that goats whispered lewd sentences in the ears of the saints.",
-            symbolism: "The faun is a mythological half human–half goat creature appearing in Ancient Rome. They were a symbol of fertility, and were said to inspire fear in men traveling in lonely, remote, or wild places.",
+            fact2: "Similar to dogs, goats will look to a human for assistance when faced with a challenge that they need help with.",
+            myth: "Few other domestic animals have suffered as much sacrifical killing as the goat. Popular Christian folk tradition in Europe associated Satan with imagery of goats.",
+            symbolism: "The faun is a mythological half human–half goat creature appearing in Ancient Rome. They were symbolic of fertility, and were said to inspire fear in men traveling in lonely, remote, or wild places.",
         
         }
     ]
@@ -90,7 +90,7 @@
         {
             name: "Katie",
             meaning: "The name Kathryn is: pure, clear. From the Latin Katharina",
-            origin: "Katie Duane is originally from Western New York, but she has also lived in Seattle, Portland, Boston, and Guayaquil (Ecuador). She writes essays and poems, and also code for the web. ",
+            origin: "Katie Duane is originally from Western New York, but she's also lived in Seattle, Portland, Boston, and Guayaquil (Ecuador). She writes essays and poems, and also code for the web. ",
             link: `<a href ="https://github.com/katiejduane" target="_blank">Github Profile</a>`
         },
         {
@@ -102,13 +102,13 @@
         {
             name: "Jeremy",
             meaning: "From the given name Jeremiah. The weeping prophet.",
-            origin: "Jim Owens is originally from Albany, Georgia, but raised in Rome (Georgia). He's super into math, has managed a few restaurants, and currently works as a web developer.",
+            origin: "Jim Owens is originally from Albany, Georgia, but was raised in Rome (Georgia). He's super into math, has managed a few restaurants, and currently works as a web developer.",
             link: `<a href ="https://github.com/jimboowens" target="_blank">Github Profile</a>`,
         },
         {
             name: "Pithos",
-            meaning: "The Greek name for a container or vessel. An ecoystsem, like our little farm, is a kind of container. So is a website",
-            origin: "We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, and mythology; which are their own kind of ecosystems, or containers. <i>Pithos</i>.",
+            meaning: "The Greek name for a container or vessel. A farm is a kind of container. So is a website.",
+            origin: "We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kind of ecosystems, or containers. <i>Pithos</i>.",
             link: "",
         }
     ]
@@ -117,7 +117,7 @@ let farmInfo = [
 
     {
         farmName: "Aluma Farm",
-        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
+        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + ": Breaking ground along the Westside Trail of the Atlanta BeltLine, two farmers strive to transform an old industrial lot into a thriving farm in Adair Park.",
     },
     {
         farmName: "Tucker Farms",
@@ -129,7 +129,7 @@ let farmInfo = [
     },
     {
         farmName: "Doghead Farms",
-        blurb: `<a href ="https://www.concrete-jungle.org/programs/doghead-farm/" target="_blank">Doghead Farms</a>` + " Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
+        blurb: `<a href ="https://www.concrete-jungle.org/programs/doghead-farm/" target="_blank">Doghead Farms</a>` + ": Also known as Concrete Jungle, DogHead Farms also grows vegetables to donate in Southwest Atlanta. This allows hosting various things, including the Food Bank of Northeast Georgia.",
     },
     {
         farmName: "Country Gardens Farm",
@@ -141,7 +141,7 @@ let farmInfo = [
     },
     {
         farmName: "White Oak Pastures",
-        blurb: `<a href ="https://www.whiteoakpastures.com/" target="_blank">White Oak Pastures</a>` + " A 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
+        blurb: `<a href ="https://www.whiteoakpastures.com/" target="_blank">White Oak Pastures</a>` + " is a 152 year-old family farm in Georgia, who takes pride in farming practices focused on regenerative land management, humane animal husbandry, and revitalization of the rural community.",
     },
     {
         farmName: "Heritage Farm Georgia",
@@ -153,7 +153,7 @@ let farmInfo = [
     },
     {
         farmName: "Love is Love Farm at Gaia Gardens",
-        blurb: `<a href ="http://www.loveislovefarm.com/" target="_blank">Love is Love Farm at Gaia Gardens</a>` + " Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
+        blurb: `<a href ="http://www.loveislovefarm.com/" target="_blank">Love is Love Farm at Gaia Gardens</a>` + ": Beginning in 2008, Love is Love desires to serve the good food movement through mindful land stewardship. The Glover Family Farm hosts Love is Love Farm in Douglasville and recently moved to Gaia Gardens in Decatur back in 2011.",
     },
     {
         farmName: "Rise 'N Shine Organic Farm",
@@ -161,6 +161,6 @@ let farmInfo = [
     },
     {
         farmName: "HoneyWood Farms",
-        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms/a>` + " is a diversified livestock and market garden operation that practices wholistic sustainable farming practices rooted in deep ecological principals.",
+        blurb: `<a href ="http://www.honeywoodfarms.com/" target="_blank">Honeywood Farms</a>` + " is a diversified livestock and market garden operation that practices holistic sustainable farming practices rooted in deep ecological principals.",
     },
 ]
