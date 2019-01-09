@@ -17,6 +17,7 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 - CSS
 - JavaScript
 - Google Maps API
+- Open Weather Map API (WIP)
 
 # Challenges & Solutions
 Coming soon...
@@ -53,5 +54,5 @@ Georgia farms are located.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
-  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability. Animal and local farm research, Javascript for Farm Search Object. Data organization.
+  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability, animal and local farm research, Javascript for Farm Search Object, data organization.
   - [GitHub Profile](http://github.com/jimboowens)

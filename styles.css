@@ -192,7 +192,7 @@ body{
 
 .intro-container{
     display: flex;
-    width: 90vwpx;
+    width: 90vw;
     justify-content: center;
     align-content: space-around;
     align-self: center;
@@ -204,15 +204,13 @@ body{
     font-size: 16px;
     text-align: center;
     background: -webkit-linear-gradient(#fc03a9, #2d8acd);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .card-wrapper {
     width: 90vw;
-    /* height: 500px; */
-    /* position: absolute; */
-    /* vertical-align: middle; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -269,7 +267,6 @@ body{
 .button-wrapper {
     display: flex;
     width: 90%;
-    /* padding: 10px; */
     align-content: center;
     justify-content: center;
 }
@@ -286,9 +283,10 @@ body{
     font-size: 13px;
     font-weight: bold;
     color: rgb(60, 73, 150, 0.7);
+    background: #7bd4b2;
 }
 
-#about{
+/* #about{
     background: #7bd4b2;
 }
 
@@ -298,7 +296,7 @@ body{
 
 #plants{
     background: #7bd4b2;
-}
+} */
 
 .compass {
     display: flex;
