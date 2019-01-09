@@ -16,6 +16,7 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 - HTML
 - CSS
 - JavaScript
+- jQuery
 - Google Maps API
 - Open Weather Map API (WIP)
 
