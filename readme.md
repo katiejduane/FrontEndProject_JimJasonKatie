@@ -40,7 +40,6 @@ Georgia farms are located.
 - Customized map with information on Georgia farms that actively farm the plants/animals we present on our website
 - Fade animations on modal/backdrop for peaceful effect
 - Customized Google Maps window (both look and information)
-- Animated sundial corresponding to date/time
 - Background color that corresponds to weather API and/or time (still a WIP)
 
 # Authors
