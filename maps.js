@@ -32,7 +32,7 @@ $('.submit-button').click((event) => {
     } else if (windowWidth <= 768) {
         $('#map').css('width',  '350px');
         $('#map').css('height', '350px');
-        $('#map').offset({ bottom: mobileMapEdge.top, left: mobileMapEdge.left - 125});
+        $('#map').offset({ bottom: mobileMapEdge.top + 100, left: mobileMapEdge.left - 125});
     }
 
 
