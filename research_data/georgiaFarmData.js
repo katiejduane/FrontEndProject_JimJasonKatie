@@ -108,7 +108,7 @@
         {
             name: "Pithos",
             meaning: "The Greek name for a container or vessel. An ecoystsem, like our little farm, is a kind of container. So is a website",
-            origin: "We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, and mythology; which are their own kind of ecosystems, or containers. <i>Pithos</i>.",
+            origin: "We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, and mythology; which are their own kinds of ecosystems, or containers. <i>Pithos</i>.",
             link: "",
         }
     ]
@@ -121,7 +121,7 @@ let farmInfo = [
     },
     {
         farmName: "Tucker Farms",
-        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
+        blurb: `<a href ="https://tuckerfarmsga.com/" target="_blank">Aluma Farm</a>` + " is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
     },
     {
         farmName: "Truly Living Well",
