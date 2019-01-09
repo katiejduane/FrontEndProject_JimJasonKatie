@@ -626,6 +626,7 @@ a:active {
     .intro-text{
         font-size: 16px;
         background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
