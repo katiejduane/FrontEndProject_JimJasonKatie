@@ -252,11 +252,12 @@ $(aboutButton).on('click', function () {
         let mainHTML = 
         `<div class="circle">
             <div class="intro-container">
-                <p class="intro-text">Pithos<br> 
+                <div class="intro-logo"></div>
+                <p class="intro-text">
                     noun<br>
-                    pi·​thos | \ˈpiˌthäs, ˈpīˌ-\<br>
-                    plural pithoi\-​thȯi \<br>
-                    Definition of pithos: a very large earthenware jar with a wide round mouth used throughout the ancient Greek world especially for holding and storing large quantities of food (as grain) or liquids (as wine, oil) and sometimes for the burial of the dead</p>
+                    pi·​thos | ˈpiˌthäs, ˈpī<br>
+                    plural pithoi<br>
+                    Definition of pithos: a very large earthenware jar with a wide round mouth used throughout the ancient Greek world especially for holding and storing large quantities of food (as grain) or liquids (as wine, oil) and sometimes for the burial of the dead.</p>
             </div>
         </div>`
         $(main).html(mainHTML)
