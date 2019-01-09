@@ -605,7 +605,7 @@ a:active {
 
 /*tablet landscape ================================================================================================================*/ 
 
-@media (max-width: 1024px) and (min-width: 900px) and (max-height: 768px) {
+@media (max-width: 1024px) and (min-width: 900px) and (min-height: 768px) {
 
     body {
         height: 100%;
@@ -794,6 +794,7 @@ a:active {
         font-size: 14px;
         text-align: center;
         background: -webkit-linear-gradient(#f0f09e, #7bd4b2);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
