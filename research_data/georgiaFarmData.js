@@ -121,7 +121,7 @@ let farmInfo = [
     },
     {
         farmName: "Tucker Farms",
-        blurb: `<a href ="https://www.alumafarm.com/Aluma" target="_blank">Aluma Farm</a>` + " is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
+        blurb: `<a href ="https://tuckerfarmsga.com/" target="_blank">Aluma Farm</a>` + " is a predominantly restaurant-supported farm located in Rome, Georgia. We grow specialty lettuces, greens, and herbs as well as seasonal garden vegetables.",
     },
     {
         farmName: "Truly Living Well",

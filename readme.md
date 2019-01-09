@@ -10,7 +10,7 @@
 * Authors
 
 # Description
-We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, and mythology; which are their own kind of ecosystems, or containers. <i>Pithos</i>.
+We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology and health; which are their own kinds of ecosystems, or containers. <i>Pithos</i>.
 
 # Technologies
 - HTML
@@ -41,7 +41,6 @@ Georgia farms are located.
 - Customized map with information on Georgia farms that actively farm the plants/animals we present on our website
 - Fade animations on modal/backdrop for peaceful effect
 - Customized Google Maps window (both look and information)
-- Animated sundial corresponding to date/time
 - Background color that corresponds to weather API and/or time (still a WIP)
 
 # Authors
