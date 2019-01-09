@@ -16,7 +16,7 @@
             latin: "Latin: Prunus persica",
             historicalFact: "The name 'persica' refers to its widespread cultivation in Persia (modern-day Iran), from where it was transplanted to Europe. One of the old meanings of Tao is 'peach'.",
             medicinal: "Peaches are a great source of zinc, which also has anti-aging properties. Eating peaches also may decrease neurodegenerative risk of disorders, such as Alzheimer's disease.",
-            myth: "In Chinese mythology, the 'Peaches of Immortality' are consumed by people to make them importal. The peach was also a standard symbol of female genitalia and was connected with Taoist sexual mysticism.",
+            myth: "In Chinese mythology, the 'Peaches of Immortality' are consumed by people to make them immortal. The peach was also a standard symbol of female genitalia and was connected with Taoist sexual mysticism.",
             georgia: "Georgia ranks third, in the US, for peach production, but China wins for the world.",
 
         },
