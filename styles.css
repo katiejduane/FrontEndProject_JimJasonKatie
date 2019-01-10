@@ -176,7 +176,7 @@ body{
 }
 
 #pithos-logo{
-    background: url(icons/pithos-icon-vect_color2.png) center center no-repeat;
+    background: url(images/pithos-icon-vect_color2.png) center center no-repeat;
     background-size: 80%;
     width: 100%;
     height: 100%;
@@ -408,7 +408,7 @@ a:active {
     }
 
     #pithos-logo{
-        background: url(icons/pithos-icon-vect_color2.png) center center no-repeat;
+        background: url(images/pithos-icon-vect_color2.png) center center no-repeat;
         background-size: 90%;
         width: 100%;
         height: 100%;

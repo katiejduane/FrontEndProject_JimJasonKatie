@@ -231,16 +231,16 @@ $(aboutButton).on('click', function () {
         $(main).html(mainHTML)
         console.log("hi")
         $('.card1-background').css('background-color', 'lightgoldenrodyellow');
-        $('.card1-image').css('background', 'url(icons/katie-icon-vect.png) center center no-repeat');
+        $('.card1-image').css('background', 'url(images/katie-icon-vect.png) center center no-repeat');
         $('.card1-image').css('background-size', '70%');
         $('.card2-background').css('background-color', 'lightgoldenrodyellow');
-        $('.card2-image').css('background', 'url(icons/jason-icon-vect.png) center center no-repeat');
+        $('.card2-image').css('background', 'url(images/jason-icon-vect.png) center center no-repeat');
         $('.card2-image').css('background-size', '75%');
         $('.card3-background').css('background-color', 'lightgoldenrodyellow');
-        $('.card3-image').css('background', 'url(icons/jim-icon-vect.png) center center no-repeat');
+        $('.card3-image').css('background', 'url(images/jim-icon-vect.png) center center no-repeat');
         $('.card3-image').css('background-size', '65%');
         $('.card4-background').css('background-color', 'lightgoldenrodyellow');
-        $('.card4-image').css('background', 'url(icons/pithos-icon-vect.png) center center no-repeat');
+        $('.card4-image').css('background', 'url(images/pithos-icon-vect.png) center center no-repeat');
         $('.card4-image').css('background-size', '75%');
         farmData();
 })
