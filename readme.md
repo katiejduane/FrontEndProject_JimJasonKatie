@@ -65,3 +65,5 @@ Georgia farms are located.
 - Jim Owens
   - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability, animal and local farm research, Javascript for Farm Search Object, data organization, code cleanup, error catch for bunnies getting stuck in the air.
   - [GitHub Profile](http://github.com/jimboowens)
+
+  
