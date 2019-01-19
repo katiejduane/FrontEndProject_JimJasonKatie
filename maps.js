@@ -1,6 +1,3 @@
-// let backdrop = document.querySelector('.backdrop');
-// let modal1 = document.querySelector('.modal-1');
-// let orb1 = document.querySelector('.orb-1');
 let toggle = 'hidden';
 let map = document.querySelector('#map');
 
