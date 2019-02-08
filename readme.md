@@ -26,16 +26,14 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 - Challenge: the design was heavily oriented to the horizontal. 
     - Solution: Several edits and re-designs had to be implemented for mobile and tablet-portrait.
 - Challenge: Animating the images within the circle made them so large they were clipped by the edge of the circle.
-    - Solution: Created separate <div> elements for the background color and the image, and animated them at different rates and to a different target size.
+    - Solution: Created separate DIV elements for the background color and the image, and animated them at different rates and to a different target size.
 - Challenge: We didn't initially write the CSS mobile-first, so we had a lot of refactoring to do anytime we redesigned something.
     - Solution: Next time, we'll start mobile-first!
 - Challenge: Sometimes the bunnies do not load, rendering the map empty and unusable for the user.
     - Solution: TBA
 
 # MVP
-A front-end-only website that is informative and aesthetically pleasing . It enables the user to learn about some of the history and
-mythology around plants and animals commonly farmed in Georgia. The user can also click on a map to see where various
-Georgia farms are located. 
+A front-end-only website that is informative and aesthetically pleasing . It enables the user to learn about some of the history and mythology around plants and animals commonly farmed in Georgia. The user can also click on a map to see where various Georgia farms are located. 
 - A graphic display that corresponds to written info
 - Written info stored in JS object
 - Simple map with a few Georgia Farms located (using Google maps API)
@@ -47,10 +45,9 @@ Georgia farms are located.
 - Use of grid layout
 
 # Stretch Goals
-- Use of CSS animations for hover as well as certain click functions
-- Customized map with information on Georgia farms that actively farm the plants/animals we present on our website
-- Fade animations on modal/backdrop for peaceful effect
-- Customized Google Maps window (both look and information)
+- Use of CSS animations for hover as well as certain click functions (reached)
+- Customized map with information on Georgia farms that actively farm the plants/animals we present on our website (reached)
+- Fade animations on modal/backdrop for peaceful effect (reach)
 - Background color that corresponds to weather API and/or time (still a WIP)
 
 # Authors
@@ -59,11 +56,11 @@ Georgia farms are located.
   - [GitHub Profile](https://github.com/katiejduane)
 
 - Jason Benson
-  - Contributions: Concept, wireframes, final wireframe, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for opening page, Pithos logo, Pithos research.
+  - Contributions: Concept, wireframes, final wireframe and design, CSS for tablet and desktop, CSS animations, colors & fonts, image editing, Javascript for 'About' page, design for opening page, Pithos logo, Pithos research.
   - [GitHub Profile](https://github.com/jasonpbenson)
   
 - Jim Owens
-  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability, animal and local farm research, Javascript for Farm Search Object, data organization, code cleanup, error catch for bunnies getting stuck in the air.
+  - Contributions: Boilerplate HTML and CSS, Javascript for Google Maps API and map usability, animal and local farm research, Javascript for Farm Search Object, data organization, code cleanup.
   - [GitHub Profile](http://github.com/jimboowens)
 
   
