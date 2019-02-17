@@ -13,6 +13,7 @@
 We wanted to create a space that would allow the user to experience an 'ordinary' thing in an unusual way. We were interested in ecosystems, and wanted to connect our ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, and health; which are their own kinds of ecosystems, or containers. <i>Pithos</i>.
 
 ![pithos image](_screenshots/desktopgradient2.png)
+![pithos image](_screenshots/desktopanimals.png)
 
 # Technologies
 - HTML
@@ -23,18 +24,14 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 - Open Weather Map API (WIP)
 
 # Challenges & Solutions
+![pithos image](_screenshots/desktopmap3.png)
 - Challenge: the map loaded rather erratically ON the page, especially on different devices or when the screen was resized.
     - Solution: We wrote JS to detect window size and anchor the map to either the circle or the compass so it was always visible to the user.
-    ![pithos image](_screenshots/desktopmap3.png)
-
 - Challenge: the design was heavily oriented to the horizontal. 
     - Solution: Several edits and re-designs had to be implemented for mobile and tablet-portrait.
-
 - Challenge: Animating the images within the circle made them so large they were clipped by the edge of the circle.
     - Solution: Created separate DIV elements for the background color and the image, and animated them at different rates and to a different target size.
     ![pithos image](_screenshots/desktopabout.png)
-    ![pithos image](_screenshots/desktopanimals.png)
-
 - Challenge: We didn't initially write the CSS mobile-first, so we had a lot of refactoring to do anytime we redesigned something.
     - Solution: Next time, we'll start mobile-first!
 
