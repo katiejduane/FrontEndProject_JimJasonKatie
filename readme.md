@@ -24,8 +24,8 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 
 # Challenges & Solutions
 
-- Challenge: the map loaded rather erratically ON the page, especially on different devices or when the screen was resized.
 ![pithos image](_screenshots/desktopmap3.png)
+- Challenge: the map loaded rather erratically ON the page, especially on different devices or when the screen was resized.
     - Solution: We wrote JS to detect window size and anchor the map to either the circle or the compass so it was always visible to the user.
 - Challenge: the design was heavily oriented to the horizontal. 
     - Solution: Several edits and re-designs had to be implemented for mobile and tablet-portrait.
@@ -34,9 +34,6 @@ We wanted to create a space that would allow the user to experience an 'ordinary
     ![pithos image](_screenshots/desktopabout.png)
 - Challenge: We didn't initially write the CSS mobile-first, so we had a lot of refactoring to do anytime we redesigned something.
     - Solution: Next time, we'll start mobile-first!
-
-- Challenge: Sometimes the bunnies do not load, rendering the map empty and unusable for the user.
-    - Solution: TBA
 
 # MVP
 A front-end-only website that is informative and aesthetically pleasing . It enables the user to learn about some of the history and mythology around plants and animals commonly farmed in Georgia. The user can also click on a map to see where various Georgia farms are located. 
