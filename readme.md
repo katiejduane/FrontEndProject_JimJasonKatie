@@ -25,8 +25,8 @@ We wanted to create a space that would allow the user to experience an 'ordinary
 # Challenges & Solutions
 
 - Challenge: the map loaded rather erratically ON the page, especially on different devices or when the screen was resized.
+![pithos image](_screenshots/desktopmap3.png)
     - Solution: We wrote JS to detect window size and anchor the map to either the circle or the compass so it was always visible to the user.
-    ![pithos image](_screenshots/desktopmap3.png)
 - Challenge: the design was heavily oriented to the horizontal. 
     - Solution: Several edits and re-designs had to be implemented for mobile and tablet-portrait.
 - Challenge: Animating the images within the circle made them so large they were clipped by the edge of the circle.
